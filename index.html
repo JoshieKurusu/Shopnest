@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShopNest | Fashion apparel & Accessories</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md bg-white">
+                <div class="container-fluid mx-0">
+                    <a class="navbar-brand order-1" href="./index.html"><img src="./img/Red_and_Black_Online_Fashion_Shop_Business_Logo-removebg.png" alt="ShopNest"></a>
+                    <button class="navbar-toggler collapsed order-3 d-flex d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
+                    <!--Nav Menu-->
+                    <div class="collapse collapse-horizontal wrapper navbar-collapse order-4 order-md-2" id="navbarContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./policies.html">Store Policies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./category.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                        </ul>                    
+                    </div>
+                    <!--Shopping Cart button-->
+                    <button class="btn cart-btn order-2 order-md-3" id="cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasContent">
+                        <img src="./img/2638312_bag_buy_cart_e-commerce_marketing_icon-removebg-preview.png" alt="Cart">
+                        <span class="quantity"></span>
+                    </button>
+                    <form role="search" class="d-flex order-4 align-self-end bg-white mt-3 mt-md-0 my-lg-auto border border-black">
+                        <i class="fa fa-search my-auto ms-2"></i><input class="form-control border-0" type="text" placeholder="Search" aria-label="Search">
+                    </form>                    
+                </div>
+            </nav>
+            <!--Shopping Cart Sidebar-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasContent" aria-labelledby="offcanvasContentLabel">
+                <div class="offcanvas-header">
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#offcanvasContent"><i class="fa fa-angle-left"></i></button>
+                    <h3>Cart</h3>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="listItem">
+                        <div class="card" id="1">
+                            <img src="./img/11062b_0e8a225f5d424cc0ab6ec38a522202a3~mv2.webp" alt="EcoChic Vegan Leather Handbag">
+                            <div class="card-body">
+                                <h6 id="product-name">EcoChic Vegan Leather Handbag</h6>
+                                <p class="price">₱79.99</p>
+                                <div class="input-group">
+                                    <span class="input-group-prepend">
+                                        <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                            <span class="fa fa-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="99999">
+                                    <span class="input-group-append">
+                                        <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[1]">
+                                            <span class="fa fa-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn-close" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="card" id="2">
+                            <img src="./img/nsplsh_426f6667655646472d5f77~mv2_d_4187_6274_s_4_2.webp" alt="Bamboo Shades">
+                            <div class="card-body">
+                                <h6 id="product-name">Bamboo Shades</h6>
+                                <p class="price">₱45.99</p>
+                                <div class="input-group">
+                                    <span class="input-group-prepend">
+                                        <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                                            <span class="fa fa-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="99999">
+                                    <span class="input-group-append">
+                                        <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[2]">
+                                            <span class="fa fa-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn-close" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="card" id="3">
+                            <img src="./img/11062b_dc64a726dac849d1895cf9a5bfa9a645~mv2_d_4296_2864_s_4_2.webp" alt="Organic Cotton Tee">
+                            <div class="card-body">
+                                <h6 id="product-name">Organic Cotton Tee</h6>
+                                <p class="price">₱25.00</p>
+                                <div class="input-group">
+                                    <span class="input-group-prepend">
+                                        <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                                            <span class="fa fa-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[3]" class="form-control input-number" value="1" min="1" max="99999">
+                                    <span class="input-group-append">
+                                        <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[3]">
+                                            <span class="fa fa-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn-close" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="checkout">
+                        <h6>Subtotal</h6>
+                        <p class="total">₱150.98</p>
+                    </div>
+                </div>
+                <div class="offcanvas-footer">
+                    <button type="button"><a href="./cart.html">View Cart</a></button>
+                </div>
+            </div>
+        </header>
+        <main class="d-flex flex-column">
+            <!--Welcome Section-->
+            <section class="welcome">
+                <div class="container-fluid">
+                    <picture>
+                        <source srcset="./img/11062b_cbd0ae7240784ecaa17a0d029dc8d7bf~mv2(1).webp" media="(min-width: 1400px)">
+                        <source srcset="./img/11062b_cbd0ae7240784ecaa17a0d029dc8d7bf~mv2(2).webp" media="(max-width: 1399px)">
+                        <source srcset="./img/11062b_cbd0ae7240784ecaa17a0d029dc8d7bf~mv2.webp" media="(max-width: 425px)">
+                        <img class="object-fit-cover" src="./img/11062b_cbd0ae7240784ecaa17a0d029dc8d7bf~mv2.webp" alt="Walking with Bicycle">            
+                    </picture>
+                    <div class="card border-0 mt-2 mt-md-0">
+                        <div class="card-body">
+                            <h1 class="card-title">ShopNest</h1>
+                            <p class="card-text">Where fashion meets comfort and quality</p>      
+                        </div>
+                    </div>                
+                </div>
+            </section>
+            <!--Features Section-->
+            <section class="features py-5 text-center order-sm-3 py-sm-4 pt-xl-5">
+                <div class="container-fluid">
+                    <div class="text mb-5 mb-sm-3 mb-xl-5">
+                        <h1>Our Impact</h1>
+                        <p>Promoting Conscious Consumption</p>                
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row justify-content-around justify-content-xxl-center">
+                        <div class="card">
+                            <picture>
+                                <source srcset="./img/11062b_55b5a58dda3349fea582e264ca294b4e~mv2.webp" media="(min-width: 1200px)">
+                                <source srcset="./img/11062b_55b5a58dda3349fea582e264ca294b4e~mv2(2).webp" media="(min-width: 992px)">
+                                <source srcset="./img/11062b_55b5a58dda3349fea582e264ca294b4e~mv2(1).webp">
+                                <img class="object-fit-cover" src="./img/11062b_55b5a58dda3349fea582e264ca294b4e~mv2(1).webp" alt="Man in Casual Clothing">
+                            </picture>
+                            <div class="card-body">
+                                <h3 class="card-title">No Toxic Chemicals</h3>
+                                <p class="card-text">Conserving Nature</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <picture>
+                                <source srcset="./img/11062b_e609d07aac904e12bf0781d2a76adf4f~mv2.webp" media="(min-width: 1200px)">
+                                <source srcset="./img/11062b_e609d07aac904e12bf0781d2a76adf4f~mv2(2).webp" media="(min-width: 992px)">
+                                <source srcset="./img/11062b_e609d07aac904e12bf0781d2a76adf4f~mv2(1).webp">
+                                <img class="object-fit-cover" src="./img/11062b_e609d07aac904e12bf0781d2a76adf4f~mv2(1).webp" alt="Clothes Comparison">
+                            </picture>
+                            <div class="card-body">
+                                <h3 class="card-title">Biodegradable Products</h3>
+                                <p class="card-text">Human-Ecosystem Equilibrium</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                            <picture>
+                                <source srcset="./img/11062b_c7b062d778a84cb2bce5a6d62a01a095~mv2.webp" media="(min-width: 1200px)">
+                                <source srcset="./img/11062b_c7b062d778a84cb2bce5a6d62a01a095~mv2(2).webp" media="(min-width: 992px)">
+                                <source srcset="./img/11062b_c7b062d778a84cb2bce5a6d62a01a095~mv2(1).webp">
+                                <img class="object-fit-cover" src="./img/11062b_c7b062d778a84cb2bce5a6d62a01a095~mv2(1).webp" alt="Pile of Folded Knits">
+                            </picture>
+                            <div class="card-body">
+                                <h3 class="card-title">Recycled Materials</h3>
+                                <p class="card-text">100% Natural and Renewable</p>
+                            </div>
+                        </div>                
+                    </div>                
+                </div>
+            </section>
+            <!--Products Section-->
+            <section class="products order-lg-2">
+                <div class="container-fluid">
+                    <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
+                    <div class="carousel">
+                        <div class="card" id="1">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_0e8a225f5d424cc0ab6ec38a522202a3~mv2.webp" alt="EcoChic Vegan Leather Handbag">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">EcoChic Vegan Leather Handbag</h5>
+                                <p class="card-text">₱79.99</p>
+                            </div>
+                        </div>
+                        <div class="card" id="2">
+                            <img onclick="window.location.href='./product.html'" src="./img/nsplsh_426f6667655646472d5f77~mv2_d_4187_6274_s_4_2.webp" alt="Bamboo Shades">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Bamboo Shades</h5>
+                                <p class="card-text">₱45.99</p>
+                            </div>
+                        </div>
+                        <div class="card" id="3">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_dc64a726dac849d1895cf9a5bfa9a645~mv2_d_4296_2864_s_4_2.webp" alt="Organic Cotton Tee">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Organic Cotton Tee</h5>
+                                <p class="card-text">₱25.00</p>
+                            </div>
+                        </div>
+                        <div class="card" id="4">
+                            <img onclick="window.location.href='./product.html'" src="./img/177be88defb24aa6bfb93b859de0cb72.webp" alt="Minimalist Vegan Leather Strap Watch">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Minimalist Vegan Leather Strap Watch</h5>
+                                <p class="card-text">₱49.99</p>
+                            </div>
+                        </div>
+                        <div class="card" id="5">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_6ce54fd498074e949698fb6dfa8d889b~mv2.webp" alt="Minimalist Vegan Leather wallet">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Minimalist Vegan Leather wallet</h5>
+                                <p class="card-text">₱29.99</p>
+                            </div>
+                        </div>
+                        <div class="card" id="6">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_76ecfc12b433417a841d170372c9e91b~mv2.webp" alt="Trendy Vegan Leather Tote Bag">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Trendy Vegan Leather Tote Bag</h5>
+                                <p class="card-text">₱75.00</p>
+                            </div>
+                        </div>
+                        <div class="card" id="7">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_c1fec228c54541e68d46d06faca94bd8~mv2.webp" alt="EcoChic Recycled Backpack">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">EcoChic Recycled Backpack</h5>
+                                <p class="card-text">₱49.99</p>
+                            </div>
+                        </div>
+                        <div class="card" id="8">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_1b7ca1ff5f5541a6ab4176aaafc59121~mv2_d_1576_2117_s_2.webp" alt="Sleek Vegan Leather Phone Case">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Sleek Vegan Leather Phone Case</h5>
+                                <p class="card-text">₱25.99</p>
+                            </div>
+                        </div>
+                        <div class="card" id="9">
+                            <img onclick="window.location.href='./product.html'" src="./img/11062b_3aeb220403954d9bb93f0f3ebb0e3df0~mv2.webp" alt="Organic Cotton Minimalist T-Shirt">
+                            <span data-bs-toggle="modal" data-bs-target="#productModalContent">Quick View</span>
+                            <div class="card-body">
+                                <h5 class="card-title">Organic Cotton Minimalist T-Shirt</h5>
+                                <p class="card-text">₱25.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <i id="right" class="fa fa-angle-right" aria-hidden="true"></i>                
+                </div>
+                <!--Quick View-->
+                <div class="modal fade productModal" id="productModalContent" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content content rounded-0">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="productItem">
+                                    <div class="col1">
+                                        <img src="./img/11062b_0e8a225f5d424cc0ab6ec38a522202a3~mv2.webp" alt="EcoChic Vegan Leather Handbag">
+                                    </div>
+                                    <div class="col2">
+                                        <div class="row1">
+                                            <h4>EcoChic Vegan Leather Handbag</h4>
+                                            <p>₱79.99</p>
+                                        </div>
+                                        <div class="row2">
+                                            <p>Quantity</p>
+                                            <div class="input-group">
+                                                <input type="text" name="quant[1]" class="form-control input-number border-0" value="1" min="1" max="99999">
+                                                <div class="buttons">
+                                                    <div class="input-group-ascend">
+                                                        <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                                            <span class="fa fa-angle-up"></span>
+                                                        </button>
+                                                    </div>                                            
+                                                    <div class="input-group-descend">
+                                                        <button type="button" class="btn btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="fa fa-angle-down"></span>
+                                                        </button>
+                                                    </div>                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row3">
+                                            <button type="button" class="btn" onclick="addToCart(key)">
+                                                <span class="text">Add to Cart</span>
+                                                <span class="falling-dots">
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                    <span class="dot"></span>
+                                                </span>
+                                            </button>
+                                            <a href="./product.html">View More Details</a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--About Section-->
+            <section class="about pb-4 order-4 pt-sm-4 pt-xl-5">
+                <div class="container-fluid">
+                    <div class="card d-flex flex-column flex-md-row">
+                        <img class="img-fluid object-fit-cover" src="./img/11062b_55b5a58dda3349fea582e264ca294b4e~mv2(2).webp" alt="Man in Casual Clothes">
+                        <div class="card-body">
+                            <h1 class="card-title">About Us</h1>
+                            <p class="card-text">
+                                Our Online Sustainable Clothing Store was born from the desire to live in a more balanced world, without creating excess waste. Since 2000 we have followed this belief, with each product designed to create a conscious consumption cycle that benefits everyone. Browse our products and purchase today to join our community of sustainable shoppers.
+                            </p>
+                            <button><a href="#">Learn More</a></button>   
+                        </div>
+                    </div>                
+                </div>
+            </section>
+        </main>
+        <footer class="py-4 py-sm-2">
+            <div class="container-fluid mt-xl-3">
+                <a href="#">info@mysite.com</a>
+                <div class="social-bar">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+                <div class="mb-xl-3">&copy2023 by ShopNest. Proudly created with Wix.com</div>            
+            </div>
+        </footer>
+        <script src="script.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

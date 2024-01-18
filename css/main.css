@@ -1,0 +1,3219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap");
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes txt1 {
+  0% {
+    opacity: 1;
+  }
+  20%, 80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes txt2 {
+  0% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.show {
+  overflow: hidden;
+}
+
+header .navbar {
+  padding: 8px 0 16px;
+}
+header .navbar .container-fluid {
+  position: relative;
+}
+header .navbar .container-fluid .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+header .navbar .container-fluid .navbar-brand img {
+  margin: auto 0;
+  width: 55px;
+  height: 45px;
+}
+header .navbar .container-fluid .navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  border-color: #FFF;
+  margin-left: 20px;
+  z-index: 999;
+}
+header .navbar .container-fluid .navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+header .navbar .container-fluid .navbar-toggler .toggler-icon {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #000;
+  left: 0;
+  opacity: 1;
+  z-index: 999;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+header .navbar .container-fluid .navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(135deg);
+}
+header .navbar .container-fluid .navbar-toggler .middle-bar {
+  margin-top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+header .navbar .container-fluid .navbar-toggler .bottom-bar {
+  margin-top: 0;
+  transform: rotate(-135deg);
+}
+header .navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .navbar .container-fluid .navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+header .navbar .container-fluid .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+header .navbar .container-fluid .navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+header .navbar .container-fluid .navbar-collapse {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 0 0;
+  z-index: 2;
+  background: #FFF;
+  transition: 0.15s ease-in-out;
+}
+header .navbar .container-fluid .navbar-collapse .navbar-nav {
+  text-align: center;
+}
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 12px 24px;
+  color: #000;
+  font: normal 400 1.125rem/29px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
+  color: #E71D1D;
+}
+header .navbar .container-fluid .cart-btn {
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: auto;
+}
+header .navbar .container-fluid .cart-btn img {
+  width: 40px;
+  height: 40px;
+}
+header .navbar .container-fluid .cart-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 17px;
+  padding: 3px 15px;
+  background: none;
+  color: #E71D1D;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header .navbar .container-fluid .cart-btn:disabled {
+  pointer-events: all;
+  opacity: 1;
+}
+header .navbar .container-fluid form {
+  display: block;
+  width: 100%;
+}
+header .navbar .container-fluid form i {
+  color: #797979;
+}
+header .navbar .container-fluid form :focus {
+  box-shadow: none !important;
+}
+
+main .welcome .container-fluid {
+  position: relative;
+  padding: 0;
+}
+main .welcome .container-fluid picture img {
+  width: 100%;
+  height: auto;
+}
+main .welcome .container-fluid .card {
+  width: 100%;
+}
+main .welcome .container-fluid .card .card-body {
+  background: #FDFCF6;
+  text-align: center;
+}
+main .welcome .container-fluid .card .card-body .card-title {
+  color: #E71D1D;
+  font: normal 600 1.5rem/46px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .welcome .container-fluid .card .card-body .card-text {
+  color: #000;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .features .container-fluid {
+  padding: 0;
+}
+main .features .container-fluid .text h1 {
+  color: #E71D1D;
+  font: normal 600 1.5rem/46px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .features .container-fluid .text p {
+  color: #000;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .features .container-fluid div .card {
+  width: 322px;
+  height: 399px;
+  margin: 0 auto 24px;
+  position: relative;
+  max-width: 541px;
+  max-height: 500px;
+  border: none;
+  border-radius: 0;
+}
+main .features .container-fluid div .card picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .features .container-fluid div .card .card-body {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  -webkit-transform: translate(-50%, -5%);
+  -moz-transform: translate(-50%, -5%);
+}
+main .features .container-fluid div .card .card-body .card-title {
+  color: #E71D1D;
+  font: normal 600 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .features .container-fluid div .card .card-body .card-text {
+  margin-top: 8px;
+  color: #000;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .products .container-fluid {
+  width: auto;
+  height: 360px;
+  padding: 0;
+  position: relative;
+}
+main .products .container-fluid i {
+  top: 33%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  transform: translateY(-33%);
+}
+main .products .container-fluid i:first-child {
+  left: 8px;
+}
+main .products .container-fluid i:last-child {
+  right: 8px;
+}
+main .products .container-fluid .carousel {
+  width: 75%;
+  height: auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  margin: 0 auto;
+  max-width: 280px;
+}
+main .products .container-fluid .carousel .card, main .products .container-fluid .carousel img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .products .container-fluid .carousel .card {
+  scroll-snap-align: start;
+  background: #fff;
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+}
+main .products .container-fluid .carousel .card img {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .products .container-fluid .carousel .card span {
+  display: none;
+}
+main .products .container-fluid .carousel .card .card-body {
+  width: 100%;
+  padding: 12px 0 0;
+  background: none;
+}
+main .products .container-fluid .carousel .card .card-body .card-title {
+  margin: 0 0 8px;
+  color: #000;
+  font: normal 600 0.938rem/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .products .container-fluid .carousel .card .card-body .card-text {
+  color: #000;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .products .container-fluid ::-webkit-scrollbar {
+  display: none;
+}
+main .products .container-fluid .carousel.no-transition {
+  scroll-behavior: auto;
+}
+main .products .container-fluid .carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+main .products .container-fluid .carousel.dragging .card {
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main .about .container-fluid {
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+main .about .container-fluid .card {
+  border: none;
+  background: #FAF7E9;
+}
+main .about .container-fluid .card img {
+  width: 100%;
+  height: auto;
+}
+main .about .container-fluid .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .about .container-fluid .card-body .card-title, main .about .container-fluid .card-body .card-text {
+  width: 300px;
+  height: auto;
+  margin: 36px auto 0;
+  text-align: center;
+}
+main .about .container-fluid .card-body .card-title {
+  margin-bottom: 12px;
+  color: #E71D1D;
+  font: normal 600 1.5rem/46px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .about .container-fluid .card-body .card-text {
+  margin: 0;
+  color: #000;
+  font: normal 400 0.938rempx/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .about .container-fluid .card-body button {
+  margin: 16px 0 0;
+  outline: none;
+  border: 3px solid #E71D1D;
+  background: none;
+  padding: 8px 16px;
+  transition: 0.35s ease-in-out;
+}
+main .about .container-fluid .card-body button a {
+  text-decoration: none;
+  color: #E71D1D;
+  font: normal 400 0.875rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .about .container-fluid .card-body button:hover {
+  background: #E71D1D;
+  transition: 0.35s ease-in-out;
+}
+main .about .container-fluid .card-body button:hover a {
+  color: #FFF;
+}
+main .blank {
+  display: none;
+}
+main .blank .container-fluid {
+  width: auto;
+  height: 68.1vh;
+  max-width: 1200px;
+  position: relative;
+}
+main .blank .container-fluid .header {
+  margin: 0;
+  padding: 16px 0 6px;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .blank .container-fluid .header h5 {
+  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blank .container-fluid .body {
+  margin: 0;
+  top: 40%;
+  position: relative;
+  text-align: center;
+  transform: translateY(-60%);
+}
+main .blank .container-fluid .body h4 {
+  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blank .container-fluid .body a {
+  color: #000;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blank .container-fluid .body a:hover {
+  color: #949494;
+}
+main .filled {
+  display: block;
+}
+main .filled .container-fluid {
+  width: auto;
+  max-width: 1200px;
+}
+main .filled .container-fluid .col1 {
+  width: auto;
+  height: auto;
+  max-width: 620px;
+}
+main .filled .container-fluid .col1 h5 {
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #CCCCCC;
+  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col1 .card {
+  width: auto;
+  height: auto;
+  border: none;
+  padding: 30px 0;
+  border-radius: 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .filled .container-fluid .col1 .card .card-header {
+  width: 130px;
+  height: auto;
+  padding: 0;
+  margin: 0 16px 0 0;
+  border: none;
+  background: #FFF;
+}
+main .filled .container-fluid .col1 .card .card-header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .filled .container-fluid .col1 .card .card-body {
+  width: 150px;
+  height: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .filled .container-fluid .col1 .card .card-body h6 {
+  margin: 0;
+  font: normal 600 0.875rem/20px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col1 .card .card-body p {
+  margin: 20px 0 24px;
+  font: normal 400 0.875rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col1 .card .card-body .input-group {
+  width: 80px;
+  height: 30px;
+  margin: 20px 0 0;
+  border: 1px solid #000;
+}
+main .filled .container-fluid .col1 .card .card-body .input-group .input-group-prepend .btn, main .filled .container-fluid .col1 .card .card-body .input-group .input-group-append .btn {
+  height: 30px;
+  border: none;
+  z-index: 1;
+  padding: 0 9.75px 6px;
+}
+main .filled .container-fluid .col1 .card .card-body .input-group .input-group-prepend .btn .fa, main .filled .container-fluid .col1 .card .card-body .input-group .input-group-append .btn .fa {
+  color: #000;
+  font-size: 12px;
+}
+main .filled .container-fluid .col1 .card .card-body .input-group .form-control {
+  height: 28px;
+  border: none;
+  padding: 0;
+  text-align: center;
+  font: normal 400 0.75rem/16px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col1 .card .card-body :hover {
+  background: none;
+}
+main .filled .container-fluid .col1 .card .card-footer {
+  padding: 0;
+  border: none;
+  background: #FFF;
+}
+main .filled .container-fluid .col1 .card .card-footer p {
+  margin: auto 0 4px;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col1 .card .card-footer button {
+  margin-left: auto;
+}
+main .filled .container-fluid .col1 .promo-code, main .filled .container-fluid .col1 .note {
+  padding: 12px 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .filled .container-fluid .col1 .promo-code button, main .filled .container-fluid .col1 .note button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  color: #E93E47;
+}
+main .filled .container-fluid .col1 .promo-code button i, main .filled .container-fluid .col1 .note button i {
+  margin-right: 8px;
+}
+main .filled .container-fluid .col1 .promo-code button:hover, main .filled .container-fluid .col1 .note button:hover {
+  color: #F4838B;
+}
+main .filled .container-fluid .col1 .promo-code .collapse, main .filled .container-fluid .col1 .note .collapse {
+  margin: 16px 0 0;
+}
+main .filled .container-fluid .col1 .promo-code .collapse .content .form-control, main .filled .container-fluid .col1 .note .collapse .content .form-control {
+  color: #000;
+  border-radius: 0;
+  border-color: #000;
+}
+main .filled .container-fluid .col1 .promo-code .collapse .content button, main .filled .container-fluid .col1 .note .collapse .content button {
+  display: inline;
+  border: 1px solid #E51827;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col1 .promo-code .collapse .content ::-moz-placeholder, main .filled .container-fluid .col1 .note .collapse .content ::-moz-placeholder {
+  color: #000;
+}
+main .filled .container-fluid .col1 .promo-code .collapse .content ::placeholder, main .filled .container-fluid .col1 .note .collapse .content ::placeholder {
+  color: #000;
+}
+main .filled .container-fluid .col2 {
+  width: auto;
+  height: auto;
+  max-width: 620px;
+}
+main .filled .container-fluid .col2 h5 {
+  display: none;
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #CCCCCC;
+  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card {
+  border: none;
+  border-radius: 0;
+}
+main .filled .container-fluid .col2 .card .card-body {
+  padding: 16px 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .filled .container-fluid .col2 .card .card-body .subtotal-price, main .filled .container-fluid .col2 .card .card-body .delivery-fee, main .filled .container-fluid .col2 .card .card-body .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .filled .container-fluid .col2 .card .card-body .subtotal-price h6, main .filled .container-fluid .col2 .card .card-body .delivery-fee h6, main .filled .container-fluid .col2 .card .card-body .location h6 {
+  margin: 12px 0;
+  font: normal 600 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-body .subtotal-price p, main .filled .container-fluid .col2 .card .card-body .delivery-fee p, main .filled .container-fluid .col2 .card .card-body .location p {
+  margin: 12px 0;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-body .location a {
+  color: #000;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-body .location a:hover {
+  color: #646464;
+}
+main .filled .container-fluid .col2 .card .card-footer {
+  background: #FFF;
+  padding: 16px 0;
+  text-align: center;
+  border: none;
+}
+main .filled .container-fluid .col2 .card .card-footer .total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .filled .container-fluid .col2 .card .card-footer .total-price h6 {
+  margin: 0;
+  font: normal 600 1.063rem/26px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-footer .total-price p {
+  margin: 0;
+  font: normal 400 1.125rem/28px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-footer .btn {
+  width: 100%;
+  color: #FFF;
+  margin: 8px 0;
+  padding: 8px 16px;
+  border-radius: 0;
+  background: #E51827;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-footer .btn:hover {
+  background: #EB4652;
+}
+main .filled .container-fluid .col2 .card .card-footer p {
+  padding: 8px 0 16px;
+  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .container-fluid .col2 .card .card-footer p i {
+  margin-right: 8px;
+}
+main .filled .modal .modal-dialog .modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 32px;
+  border-radius: 0;
+}
+main .filled .modal .modal-dialog .modal-content .modal-header {
+  padding: 0;
+  border: none;
+}
+main .filled .modal .modal-dialog .modal-content .modal-body {
+  max-width: 340px;
+  padding: 0;
+  margin: 36px auto;
+  text-align: center;
+}
+main .filled .modal .modal-dialog .modal-content .modal-body h2 {
+  margin: 0;
+  font: normal 400 1.5rem/36px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .modal .modal-dialog .modal-content .modal-body p {
+  color: #000;
+  margin: 32px 0;
+  font: normal 400 0.875rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .modal .modal-dialog .modal-content .modal-body button {
+  width: 100%;
+  padding: 8px 0px;
+  border-radius: 0;
+  color: #FFF;
+  background: #000;
+  font: normal 400 0.938rem/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .filled .modal .modal-dialog .modal-content .modal-body button:hover {
+  background: #4C4C4C;
+}
+main .productPage .container-fluid {
+  width: auto;
+  margin: 0;
+  padding: 0 24px;
+  max-width: 1112px;
+}
+main .productPage .container-fluid .outer-row1 .first-opt, main .productPage .container-fluid .outer-row1 .second-opt {
+  margin: 16px 0;
+  font: normal 400 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row1 .first-opt a, main .productPage .container-fluid .outer-row1 .second-opt a {
+  color: #6F6F70;
+  text-decoration: none;
+}
+main .productPage .container-fluid .outer-row1 .first-opt a span {
+  margin-right: 8px;
+}
+main .productPage .container-fluid .outer-row1 .second-opt {
+  display: none;
+}
+main .productPage .container-fluid .outer-row2 .card {
+  display: none;
+  border: none;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
+  height: 232px;
+  margin-bottom: 36px;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 h4 {
+  font: normal 600 1.313rem/29px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 p {
+  font: normal 400 1.125rem/26px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 p {
+  margin-bottom: 12px;
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group {
+  width: 76px;
+  height: 36px;
+  display: flex;
+  border: 1px solid #C9C9C9;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .form-control {
+  height: 34px;
+  padding: 8px 0 8px 10px;
+  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons .input-group-ascend, main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons .input-group-descend {
+  height: 16px;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons .input-group-ascend button, main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons .input-group-descend button {
+  margin: -8px 8px 4px;
+  padding: 0;
+  border: none;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons .input-group-ascend button span, main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons .input-group-descend button span {
+  font-size: 12px;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group:hover .buttons {
+  opacity: 1;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 {
+  position: relative;
+  margin: 32px 0 36px;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0;
+  background: #E51827;
+  color: #FFF;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn .text {
+  opacity: 1;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn .falling-dots {
+  opacity: 0;
+  position: absolute;
+  margin-left: -60px;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn .falling-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background: #FFF;
+  animation: wave 1.3s linear infinite;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn .falling-dots .dot:nth-child(2) {
+  animation-delay: -1.1s;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn .falling-dots .dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn:hover {
+  background: #ED5D68;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn.clicked .text {
+  animation: txt1 1.5s ease-in-out forwards;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn.clicked .falling-dots {
+  animation: txt2 1.5s ease-in-out forwards;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar {
+  display: none;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar ul li {
+  margin: 0 8px;
+}
+main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar ul li a {
+  width: auto;
+}
+main .productPage .container-fluid .outer-row2 .card p {
+  margin-bottom: 12px;
+  color: #000;
+  font: normal 400 1.063rem/25px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .productPage .container-fluid .outer-row2 .active {
+  display: block;
+}
+main .acknowledgePage .container-fluid {
+  padding: 40px 0;
+  max-width: 840px;
+}
+main .acknowledgePage .container-fluid .header {
+  color: #000;
+  text-align: center;
+}
+main .acknowledgePage .container-fluid .header h4 {
+  font: normal 600 1.188rem/25px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .header h6 {
+  font: normal 400 0.875rem/21px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .header p {
+  font: normal 400 0.813rem/21px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card {
+  margin-bottom: 32px;
+  border: 1px solid #FCFAF1;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1, main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 {
+  display: flex;
+  flex-direction: row;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 {
+  margin-bottom: 24px;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 i {
+  background-color: #000;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  color: #FFF;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 .product-list h5 {
+  margin-bottom: 12px;
+  font: normal 600 0.875rem/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 .product-list h6, main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 .product-list p {
+  margin: 0;
+  font: normal 400 0.813rem/21px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 {
+  color: #000;
+  margin-left: 92px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #FCFAF1;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5 {
+  margin: 0;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h6 {
+  margin: 0 0 0 auto;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 {
+  padding: 16px 0;
+  border-bottom: 1px solid #FCFAF1;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 h6 {
+  margin: 0;
+  font: normal 600 0.813rem/21px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 p {
+  margin: 0;
+  font: normal 400 0.813rem/21px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .subtotal-price, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .delivery-fee, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .sales-tax, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .total-price, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .subtotal-price, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .delivery-fee, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .sales-tax, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .subtotal-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .delivery-fee h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .sales-tax h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .total-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .subtotal-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .delivery-fee h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .sales-tax h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price h6 {
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .subtotal-price p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .delivery-fee p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .sales-tax p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .total-price p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .subtotal-price p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .delivery-fee p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .sales-tax p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price p {
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 {
+  padding: 16px 0;
+  border-bottom: 1px solid #FCFAF1;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 {
+  padding: 16px 0 0;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-col1 .header, main .acknowledgePage .container-fluid .card .card-body .body-col2 .header {
+  margin: 0;
+  text-align: left;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-col1 .header h5, main .acknowledgePage .container-fluid .card .card-body .body-col2 .header h5 {
+  margin-bottom: 16px;
+  font: normal 600 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-col1 .body p, main .acknowledgePage .container-fluid .card .card-body .body-col2 .body p {
+  margin-bottom: 6px;
+  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-col1 {
+  padding: 0 0 16px;
+}
+main .acknowledgePage .container-fluid .card .card-body .body-col1 .footer p {
+  margin: 12px 0 8px;
+}
+main .acknowledgePage .container-fluid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font: normal 400 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+main .categoryPage .container-fluid .header-btn {
+  width: auto;
+  display: flex;
+  margin: 6px 0 12px;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .header-btn a {
+  color: #000;
+  text-decoration: none;
+}
+main .categoryPage .container-fluid .header-btn p {
+  margin: 0;
+}
+main .categoryPage .container-fluid .header-btn p span {
+  margin: 0 6px 0 8px;
+}
+main .categoryPage .container-fluid .header-btn p .category-name {
+  margin-left: 2px;
+}
+main .categoryPage .container-fluid .body-content .sidebar {
+  display: none;
+  max-width: 210px;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  z-index: 2;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan {
+  display: none;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan .paragraph h2 {
+  margin: 12px 0 16px;
+  font: normal 400 1.625rem/34px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan .paragraph p {
+  display: none;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct img {
+  display: none;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .active {
+  display: block;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .product-filter-choice {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 8px;
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .product-filter-choice button {
+  margin: 8px 0 0;
+  padding: 2px 10px;
+  border: none;
+  background: #E5E5E5;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .product-filter-choice button .btn-close {
+  margin-left: 12px;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .product-filter-choice input {
+  margin: 8px 0 0 16px;
+  color: #000;
+  border: none;
+  background: none;
+  text-decoration: underline;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .product-filter-choice input:hover {
+  color: #515D6F;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 p {
+  margin: 0;
+  font: normal 400 0.875rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar button {
+  padding: 0;
+  text-decoration: underline;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas {
+  width: 320px;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-header {
+  border-bottom: 1px solid #CCCCCC;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-header h3 {
+  margin: 0;
+  font: normal 400 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-header p {
+  margin: 6px 0 0 -48px;
+  font: normal 400 14px/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body {
+  padding-top: 0;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter {
+  width: 100%;
+  padding: 14px 0 16px;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by button, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter button, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse {
+  padding-top: 4px;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse input[type=radio], main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse input[type=radio] {
+  margin: 10px 8px 6px 0;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse label, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse label {
+  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse .product-option, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse .product-option {
+  margin: 4px 0;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse .product-option input[type=checkbox], main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse .product-option input[type=checkbox] {
+  margin-right: 3px;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse .product-option label, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse .product-option label {
+  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse {
+  height: 60px;
+  margin-top: 0px;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .range-slider {
+  width: 100%;
+  position: relative;
+  border-radius: 50%;
+  margin: 10px 0 0;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .range-slider .range-fill {
+  height: 3px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 3px;
+  background-color: #000;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .range-slider input[type=range] {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background: transparent;
+  -webkit-appearance: none;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .range-slider input[type=range]::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #000;
+  -webkit-appearance: none;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .range-slider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  border: none;
+  border-radius: 3px;
+  background-color: #E8E8E8;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .price-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 28px 0 0;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .price-content p {
+  color: #000;
+  font: normal 400 16px/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown {
+  display: none;
+}
+main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem {
+  display: none;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 12px;
+}
+main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card {
+  max-width: 296px;
+  height: auto;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card .card-body, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card .card-body, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card .card-body, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card .card-body {
+  padding: 12px 0 0;
+}
+main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card .card-body h6, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card .card-body h6, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card .card-body h6, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card .card-body h6 {
+  font: normal 600 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card .card-body p, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card .card-body p, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card .card-body p, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card .card-body p {
+  margin: 0;
+  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .categoryPage .container-fluid .body-content .product-content .item-list .effective {
+  display: flex;
+}
+main .policyPage .container-fluid {
+  padding: 24px 12px;
+  text-align: center;
+  background: #F7F6EB;
+}
+main .policyPage .container-fluid .policy, main .policyPage .container-fluid .return, main .policyPage .container-fluid .warranty, main .policyPage .container-fluid .privacy {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+main .policyPage .container-fluid .policy img, main .policyPage .container-fluid .return img, main .policyPage .container-fluid .warranty img, main .policyPage .container-fluid .privacy img {
+  margin: 8px 0 24px;
+}
+main .policyPage .container-fluid .policy h2, main .policyPage .container-fluid .return h2, main .policyPage .container-fluid .warranty h2, main .policyPage .container-fluid .privacy h2 {
+  margin-bottom: 8px;
+  color: #E71D1D;
+  font: normal 600 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .policyPage .container-fluid .policy h6, main .policyPage .container-fluid .return h6, main .policyPage .container-fluid .warranty h6, main .policyPage .container-fluid .privacy h6 {
+  margin-bottom: 16px;
+  color: #000;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .policyPage .container-fluid .policy p, main .policyPage .container-fluid .return p, main .policyPage .container-fluid .warranty p, main .policyPage .container-fluid .privacy p {
+  margin-bottom: 24px;
+  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .policyPage .container-fluid .policy button, main .policyPage .container-fluid .return button, main .policyPage .container-fluid .warranty button, main .policyPage .container-fluid .privacy button {
+  padding: 8px 16px;
+  border-radius: 0px;
+  border: 3px solid #E71D1D;
+  color: #E71D1D;
+  transition: 0.35s ease-in-out;
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .policyPage .container-fluid .policy button:hover, main .policyPage .container-fluid .return button:hover, main .policyPage .container-fluid .warranty button:hover, main .policyPage .container-fluid .privacy button:hover {
+  color: #FFF;
+  background: #E71D1D;
+  transition: 0.35s ease-in-out;
+}
+main .blogPage .container-fluid {
+  padding: 0;
+  max-width: 960px;
+}
+main .blogPage .container-fluid .body-header {
+  display: flex;
+  justify-content: space-between;
+  background: #E51827;
+}
+main .blogPage .container-fluid .body-header .lower-pixels {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 12px;
+}
+main .blogPage .container-fluid .body-header .lower-pixels p {
+  margin: 0;
+  color: #FFF;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .body-header .lower-pixels button {
+  margin-left: auto;
+  padding: 0 4px;
+  outline: none;
+  border: none;
+}
+main .blogPage .container-fluid .body-header .lower-pixels button a {
+  color: #000;
+}
+main .blogPage .container-fluid .body-header .lower-pixels button a i {
+  color: #FFF;
+}
+main .blogPage .container-fluid .body-header .higher-pixels {
+  display: none;
+}
+main .blogPage .container-fluid .body-header .account-logo {
+  margin-left: 8px;
+}
+main .blogPage .container-fluid .body-header .account-logo button {
+  background: none;
+  border: none;
+  outline: none;
+}
+main .blogPage .container-fluid .body-header .account-logo button img {
+  width: 45px;
+  height: 45px;
+}
+main .blogPage .container-fluid .all-post {
+  display: block;
+}
+main .blogPage .container-fluid .all-post .card {
+  border: 2px solid #FCFAF2;
+  border-radius: 0;
+}
+main .blogPage .container-fluid .all-post .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: default;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info img {
+  width: 60px;
+  height: 60px;
+  margin-left: -12px;
+  cursor: default;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .account-text p {
+  margin: 4px 0 0;
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .account-text .date {
+  margin-top: -5px;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .dropup {
+  margin: 0 -12px 0 auto;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .dropup ::after {
+  display: none;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .dropup .dropdown-menu {
+  width: 300px;
+  padding: 0 12px;
+  border-radius: 0;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .dropup .dropdown-menu li {
+  padding: 12px 0;
+  border-bottom: 1px solid #D5D5D5;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .dropup .dropdown-menu li i {
+  margin: 0 16px;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-info .account-info .dropup .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-text {
+  cursor: pointer;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-text h5 {
+  font: normal 400 1.188rem/27px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-text p {
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-text p:hover {
+  color: #E8343E;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button {
+  padding: 0;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers .viewer-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers .message-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button .viewer-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button .message-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button .viewer-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button .message-text {
+  display: none;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers i, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button i, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button i {
+  padding: 0;
+  font-weight: 400;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers span, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button span, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button span {
+  margin: 0 8px;
+  font: normal 400 0.75rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers {
+  margin-bottom: -1px;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments {
+  margin-left: 16px;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button i {
+  font-size: 14px;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts {
+  margin-left: auto;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button span {
+  display: none;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button i {
+  color: #E8343E;
+}
+main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts:hover button span {
+  display: inline;
+}
+main .blogPage .container-fluid .all-post .card:hover .card-body .post-text h5 {
+  color: #E8343E;
+}
+main .blogPage .container-fluid .post-content {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card {
+  margin-bottom: 24px;
+  border-radius: 0;
+  border: 2px solid #FCFAF2;
+}
+main .blogPage .container-fluid .post-content .card .card-body {
+  padding: 0;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 0 16px;
+  /*.account-text {
+      display: flex;
+      align-items: center;
+      p {
+          margin: 0;
+          font: normal 400 14px/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .date {
+          margin-left: 3px;
+          .bullet {
+              margin: 0 6px;
+              font-size: 16px;
+              font-weight: bolder;
+          }
+      }
+  }*/
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info img {
+  width: 60px;
+  height: 60px;
+  margin-left: -12px;
+  cursor: default;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text p {
+  cursor: default;
+  margin: 4px 0 0;
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date {
+  cursor: auto;
+  margin-top: -5px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date .bullet:first-child {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date .bullet {
+  cursor: default;
+  margin: 0 6px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date .read {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .dropup {
+  margin: 0 -12px 0 auto;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .dropup ::after {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .dropup .dropdown-menu {
+  width: 300px;
+  padding: 0 12px;
+  border-radius: 0;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .dropup .dropdown-menu li {
+  padding: 12px 0;
+  border-bottom: 1px solid #D5D5D5;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .dropup .dropdown-menu li i {
+  margin: 0 16px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .account-info .dropup .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .content-text {
+  padding: 0 16px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .content-text h5 {
+  margin: 32px 0;
+  font: normal 400 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .card .card-body .content-text .paragraph {
+  text-align: center;
+}
+main .blogPage .container-fluid .post-content .card .card-body .content-text .paragraph p {
+  margin-bottom: 24px;
+  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .card .card-body .img {
+  width: 360px;
+  height: 250px;
+  margin: 0 auto 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow-x: hidden;
+  display: block;
+  cursor: pointer;
+}
+main .blogPage .container-fluid .post-content .card .card-body .social-media-bar {
+  padding: 0 16px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .social-media-bar ul {
+  padding: 0;
+  list-style-type: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .social-media-bar ul li {
+  padding: 16px 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .blogPage .container-fluid .post-content .card .card-body .social-media-bar ul li a {
+  margin-right: 28px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .social-media-bar ul li a i {
+  color: #000;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 16px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button {
+  padding: 0;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers .viewer-text, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers .message-text, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button .viewer-text, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button .message-text, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button .viewer-text, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button .message-text {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers i, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button i, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button i {
+  padding: 0;
+  font-weight: 400;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers span, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button span, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button span {
+  margin: 0 8px;
+  font: normal 400 0.75rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers {
+  margin-bottom: -1px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments {
+  margin-left: 16px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button {
+  outline: none;
+  border: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button i {
+  font-size: 14px;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button .message-counter {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts {
+  margin-left: auto;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button {
+  outline: none;
+  border: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button span {
+  display: none;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button i {
+  color: #E8343E;
+}
+main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts:hover button span {
+  display: inline;
+}
+main .blogPage .container-fluid .post-content .recent-post {
+  height: 356px;
+  border-bottom: 1px solid #CCCCCC;
+  /*.carousel {
+      .carousel-indicators {
+          margin-bottom: 0;
+          bottom: -15%;
+          button {
+              width: 8px;
+              height: 8px;
+              border-radius: 100%;
+              background-color: #b4b4b4;
+          }
+      }
+      .carousel-inner {
+          .carousel-item {
+              .card {
+                  width: 260px;
+                  margin: 0 auto;
+                  border: 1px solid #FCFAF2;
+                  border-radius: 0;
+                  img {
+                      height: 140px;
+                      object-fit: cover;
+                  }
+                  .card-body {
+                      h6 {
+                          margin-bottom: 12px;
+                          font: normal 400 16px/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                      }
+                      .post-engagement {
+                          padding: 6px 0 0;
+                          border-top: 1px solid #CCCCCC;
+                      }
+                  }
+              }
+          }
+      }
+      .carousel-control-prev, .carousel-control-next {
+          display: none;
+      }
+  }*/
+}
+main .blogPage .container-fluid .post-content .recent-post .caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px 8px;
+}
+main .blogPage .container-fluid .post-content .recent-post .caption h6 {
+  margin: 0;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .recent-post .caption button {
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .recent-post .caption button:hover {
+  color: #E8343E;
+}
+main .blogPage .container-fluid .post-content .recent-post .caption button:active {
+  border: none;
+  outline: none;
+}
+main .blogPage .container-fluid .post-content .comment-part {
+  margin: 16px 0;
+  pointer-events: none;
+}
+main .blogPage .container-fluid .post-content .comment-part .card .card-body .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+main .blogPage .container-fluid .post-content .comment-part .card .card-body .label p {
+  margin: 0;
+  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+main .blogPage .container-fluid .post-content .comment-part .card .card-body .label img {
+  width: 45px;
+  height: 45px;
+}
+main .blogPage .container-fluid .post-content .comment-part .card .card-body textarea {
+  width: 90%;
+  height: 50%;
+  margin: 16px auto;
+  border-radius: 0px;
+  border-color: #868484;
+}
+main .blogPage .container-fluid .post-content .comment-part .card .card-body textarea::-moz-placeholder {
+  color: #000;
+}
+main .blogPage .container-fluid .post-content .comment-part .card .card-body textarea::placeholder {
+  color: #000;
+}
+
+footer .container-fluid {
+  width: auto;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+footer .container-fluid a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer .container-fluid .social-bar {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+footer .container-fluid .social-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+footer .container-fluid .social-bar ul li a i {
+  font-size: 1.5rem;
+  padding: 4px 8px;
+}
+footer .container-fluid div {
+  font: normal 400 0.75rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 375px) {
+  header .navbar .container-fluid .navbar-collapse {
+    width: 70%;
+  }
+  main .productPage .container-fluid {
+    padding: 0 32px;
+  }
+  main .productPage .container-fluid .outer-row1 .first-opt {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
+    height: 271px;
+  }
+}
+@media screen and (min-width: 425px) {
+  header .navbar .container-fluid .navbar-collapse {
+    width: 60%;
+  }
+  main .features .container-fluid div .card {
+    width: auto;
+    height: auto;
+  }
+  main .features .container-fluid div .card picture {
+    width: 400px;
+    height: auto;
+  }
+  main .products .container-fluid {
+    margin: 18px 0 0;
+  }
+  main .products .container-fluid i {
+    top: 35%;
+    transform: translateY(-65%);
+  }
+  main .products .container-fluid i:first-child {
+    left: 4%;
+  }
+  main .products .container-fluid i:last-child {
+    right: 4%;
+  }
+  main .products .container-fluid .carousel {
+    max-width: 320px;
+  }
+  main .about .container-fluid .card .card-body .card-text {
+    width: auto;
+    margin: 0 24px 0;
+  }
+  main .blank .container-fluid {
+    margin: 0 37px;
+  }
+  main .productPage .container-fluid {
+    padding: 0 40px;
+  }
+  main .productPage .container-fluid .outer-row1 .first-opt {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
+    height: 305px;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas {
+    width: 296px;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-header p {
+    margin-left: -26px;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .item-list .card {
+    width: 170px;
+    margin: 0;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .item-list .card .card-body {
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width: 576px) {
+  header .navbar .container-fluid .navbar-collapse {
+    width: 50%;
+  }
+  main .products .container-fluid {
+    margin: 34px 0 0;
+  }
+  main .products .container-fluid i:first-child {
+    left: 20px;
+  }
+  main .products .container-fluid i:last-child {
+    right: 20px;
+  }
+  main .products .container-fluid .carousel {
+    width: 80%;
+    grid-auto-columns: calc(50% - 12px);
+    max-width: none;
+  }
+  main .features .container-fluid {
+    padding: 0 12px;
+    height: auto;
+  }
+  main .features .container-fluid div {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  main .features .container-fluid div .card {
+    width: 322px;
+    margin: 0;
+  }
+  main .features .container-fluid div .card picture {
+    width: auto;
+    height: auto;
+  }
+  main .features .container-fluid div .card .card-body {
+    position: relative;
+    background: #E51827;
+    bottom: -1%;
+  }
+  main .features .container-fluid div .card .card-body .card-title, main .features .container-fluid div .card .card-body .card-text {
+    color: #FFF;
+  }
+  main .blank .container-fluid {
+    height: 71.7vh;
+    margin: 0 98px;
+  }
+  main .filled .container-fluid .col1, main .filled .container-fluid .col2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .modal .modal-dialog .modal-content {
+    position: static;
+  }
+  main .modal .modal-dialog .modal-content .modal-body h2 {
+    font-size: 1.813rem;
+    line-height: 37px;
+  }
+  main .modal .modal-dialog .modal-content .modal-body p {
+    font-size: 0.938rem;
+    line-height: 23px;
+  }
+  main .productPage .container-fluid {
+    padding: 0 12px;
+    /*.carousel {
+        .carousel-inner {
+            .carousel-item {
+                .outer-row2 {
+                    margin-top: 24px;
+                    .inner-col1 {
+                        width: auto;
+                        height: 320px;
+                        margin: 0 24px 24px 0;
+                    }
+                    .inner-col2 {
+                        width: auto;
+                        min-width: 44.246%;
+                        .innermost-row3 {
+                            width: auto;
+                            margin: 28px 0 0;
+                            .social-bar {
+                                display: block;
+                                margin: 16px 0 0;
+                                ul {
+                                    li {
+                                        a {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .outer-row3 {
+                    width: 50%;
+                }
+            }
+        }
+    }*/
+  }
+  main .productPage .container-fluid .outer-row1 .first-opt {
+    display: none;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 24px;
+    /*.btns {
+        .btn {
+            position: static;
+            display: inline-block;
+            padding: 0;
+            width: auto;
+            color: #000;
+            opacity: 1;
+            transition: none;
+            border: none;
+            text-align: justify;
+            background: none;
+            span {
+                margin: 0 8px;
+            }
+        }
+    }*/
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination li {
+    position: static;
+    display: inline-block;
+    padding: 0;
+    width: auto;
+    color: #000;
+    opacity: 1;
+    transition: none;
+    border: none;
+    text-align: justify;
+    background: none;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination li a {
+    border: none;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination li a span {
+    margin: 0 8px;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination li a:hover {
+    background: none;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination li .active {
+    color: #000;
+    background: none;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination li .disable {
+    color: #6F6F70;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .pagination span {
+    margin: 5px 0;
+  }
+  main .productPage .container-fluid .outer-row2 {
+    margin-top: 24px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body {
+    padding: 0;
+    flex-direction: row;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
+    width: auto;
+    height: 320px;
+    margin: 0 24px 24px 0;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 {
+    width: auto;
+    min-width: 44.246%;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 {
+    width: auto;
+    margin: 28px 0 0;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar {
+    display: block;
+    margin: 16px 0 0;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar ul li a {
+    color: #000;
+  }
+  main .productPage .container-fluid .outer-row2 .card p {
+    width: 50%;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1, main .acknowledgePage .container-fluid .card .card-body .body-row2 {
+    display: flex;
+    flex-direction: row;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 i {
+    width: 100px;
+    height: 100px;
+    font-size: 3.125rem;
+    padding-top: 25px;
+    margin-right: 24px;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 {
+    margin-left: auto;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5, main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h6 {
+    width: 80px;
+    text-align: right;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5 {
+    margin-right: 24px;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 {
+    margin-left: auto;
+    width: 40%;
+  }
+  main .acknowledgePage .container-fluid .card .row2-card-body {
+    display: flex;
+    flex-direction: row;
+  }
+  main .acknowledgePage .container-fluid .card .row2-card-body .body-col1, main .acknowledgePage .container-fluid .card .row2-card-body .body-col2 {
+    width: 40%;
+  }
+  main .acknowledgePage .container-fluid .card .row2-card-body .body-col1 {
+    margin-right: 24px;
+  }
+  main .policyPage .container-fluid .policy h2, main .policyPage .container-fluid .return h2, main .policyPage .container-fluid .warranty h2, main .policyPage .container-fluid .privacy h2 {
+    font-size: 1.688rem;
+    line-height: 35px;
+  }
+  main .policyPage .container-fluid .policy h6, main .policyPage .container-fluid .return h6, main .policyPage .container-fluid .warranty h6, main .policyPage .container-fluid .privacy h6 {
+    font-size: 1.063rem;
+    line-height: 25px;
+  }
+  main .policyPage .container-fluid .policy p, main .policyPage .container-fluid .return p, main .policyPage .container-fluid .warranty p, main .policyPage .container-fluid .privacy p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .policyPage .container-fluid .policy button, main .policyPage .container-fluid .return button, main .policyPage .container-fluid .warranty button, main .policyPage .container-fluid .privacy button {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .blogPage .container-fluid .body-header {
+    background: none;
+    margin-bottom: 16px;
+  }
+  main .blogPage .container-fluid .body-header .lower-pixels {
+    display: none;
+  }
+  main .blogPage .container-fluid .body-header .higher-pixels {
+    display: block;
+    padding: 0;
+    margin: auto 12px;
+  }
+  main .blogPage .container-fluid .body-header .higher-pixels button {
+    padding: 0;
+    color: #000;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .blogPage .container-fluid .body-header .higher-pixels button:hover {
+    color: #E8343E;
+  }
+  main .blogPage .container-fluid .body-header .higher-pixels button:active {
+    border: none;
+    outline: none;
+  }
+  main .blogPage .container-fluid .all-post .card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+  main .blogPage .container-fluid .all-post .card img {
+    width: 45%;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement {
+    padding: 8px 0 0;
+    border-bottom: none;
+    border-top: 1px solid #CCCCCC;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button {
+    display: flex;
+    align-items: center;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers .viewer-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers .message-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button .viewer-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button .message-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button .viewer-text, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button .message-text {
+    display: block;
+    margin: 0;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers i, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button i, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button i {
+    display: none;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers {
+    margin: 0;
+    cursor: default;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments {
+    margin-left: 10px;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments:hover {
+    color: #E8343E;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button i {
+    display: block;
+  }
+  main .blogPage .container-fluid .post-content .card {
+    margin: 8px 12px 12px;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body {
+    padding: 24px 48px;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body .account-info, main .blogPage .container-fluid .post-content .card .card-body .content-text, main .blogPage .container-fluid .post-content .card .card-body .social-media-bar, main .blogPage .container-fluid .post-content .card .card-body .post-engagement {
+    padding: 0;
+  }
+  main .blogPage .container-fluid .post-content .comment-part .card .card-body {
+    padding: 8px 48px 24px;
+  }
+  main .blogPage .container-fluid .post-content .comment-part .card .card-body .label {
+    padding: 0 0 4px;
+    border-top: none;
+  }
+  main .blogPage .container-fluid .post-content .comment-part .card .card-body textarea {
+    width: 100%;
+    margin: 24px 0 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .navbar {
+    padding: 24px 0;
+  }
+  header .navbar .container-fluid .navbar-collapse {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 36px;
+    justify-content: end;
+  }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav {
+    text-align: end;
+  }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    padding: 5px 10px;
+    color: #595959;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
+    color: #000 !important;
+  }
+  header .navbar .container-fluid form {
+    width: 25%;
+    height: 45px;
+    margin-left: 20px;
+  }
+  header .offcanvas .offcanvas-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 94px;
+    background: #000;
+    padding: 0 32px;
+  }
+  header .offcanvas .offcanvas-header button {
+    padding: 2px 4px;
+    border: none;
+    background: none;
+  }
+  header .offcanvas .offcanvas-header button i {
+    color: #FFF;
+    font-size: 24px;
+    transform: rotate(0deg);
+    transition: all 0.25s ease-in-out;
+  }
+  header .offcanvas .offcanvas-header h3 {
+    color: #FFF;
+    margin: 0 auto;
+    font: normal 400 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .offcanvas .offcanvas-body {
+    height: 80vh;
+    padding: 32px;
+    overflow-y: hidden;
+  }
+  header .offcanvas .offcanvas-body .listItem {
+    height: 65vh;
+    padding: 0;
+    overflow-y: scroll;
+  }
+  header .offcanvas .offcanvas-body .listItem .card {
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid #FAF7E9;
+    display: flex;
+    flex-direction: row;
+  }
+  header .offcanvas .offcanvas-body .listItem .card img {
+    width: 100px;
+    height: 100px;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body {
+    padding-top: 8px;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body h6 {
+    margin: 0;
+    font: normal 600 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body p {
+    margin: 8px 0 12px;
+    font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body .input-group {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #000;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body .input-group .input-group-prepend .btn, header .offcanvas .offcanvas-body .listItem .card .card-body .input-group .input-group-append .btn {
+    height: 30px;
+    border: none;
+    z-index: 1;
+    padding: 0 9.75px 6px;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body .input-group .input-group-prepend .btn .fa, header .offcanvas .offcanvas-body .listItem .card .card-body .input-group .input-group-append .btn .fa {
+    color: #000;
+    font-size: 12px;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body .input-group .form-control {
+    height: 28px;
+    border: none;
+    padding: 0;
+    text-align: center;
+    font: normal 400 0.75/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-body :hover {
+    background: none;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-footer {
+    padding: 0;
+    opacity: 0;
+    border: none;
+    font-size: 8px;
+    background: none;
+  }
+  header .offcanvas .offcanvas-body .listItem .card .card-footer button {
+    box-shadow: none;
+  }
+  header .offcanvas .offcanvas-body .listItem .card:hover .card-footer {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  header .offcanvas .offcanvas-body .listItem::-webkit-scrollbar {
+    background: none;
+  }
+  header .offcanvas .offcanvas-body .checkout h6 {
+    margin: 0;
+    font: normal 400 1.5rem/32px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .offcanvas .offcanvas-body .checkout p {
+    margin: 0;
+    font: normal 400 1.375rem/30px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .offcanvas .offcanvas-footer {
+    height: 100px;
+    padding: 0 32px;
+    border-top: 1px solid #FAF7E9;
+  }
+  header .offcanvas .offcanvas-footer button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 25px 0;
+    background: #E51827;
+  }
+  header .offcanvas .offcanvas-footer button a {
+    padding: 14px 104px;
+    color: #FFF;
+    text-decoration: none;
+    font: normal 400 1.125rem/26px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header .show .offcanvas-header button i {
+    transform: rotate(180deg);
+    transition: all 0.25s ease-in-out;
+  }
+  main .welcome .container-fluid {
+    height: 340px;
+  }
+  main .welcome .container-fluid picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  main .welcome .container-fluid picture img {
+    width: 100%;
+    height: 100%;
+  }
+  main .welcome .container-fluid .card {
+    width: 48%;
+    height: 75%;
+    margin-left: 24px;
+    top: 42.5px;
+    background: transparent;
+  }
+  main .welcome .container-fluid .card .card-body {
+    height: 255px;
+    padding: 80.4px 0;
+    text-align: center;
+    background: rgba(231, 223, 211, 0.5);
+  }
+  main .welcome .container-fluid .card .card-body .card-title {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  main .welcome .container-fluid .card .card-body .card-text {
+    margin: 24px auto 0;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .products .container-fluid .carousel .card span {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 14px 0;
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    bottom: 0;
+    transform: translateY(-170%);
+    background: rgba(255, 255, 255, 0.7);
+    font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .products .container-fluid .carousel :hover span {
+    height: 50px;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(-170%);
+  }
+  main .products .productModal {
+    --bs-modal-width: 800px;
+  }
+  main .products .productModal .modal-xl .content .modal-header {
+    padding: 22px 24px 0 0;
+  }
+  main .products .productModal .modal-xl .content .modal-header button {
+    font-size: 0.75rem;
+  }
+  main .products .productModal .modal-xl .content .modal-body {
+    padding: 0 34px 54px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem {
+    display: flex;
+    flex-direction: row;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col1 {
+    margin-right: 28px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col1 img {
+    width: 384px;
+    height: 384px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row1 h4 {
+    margin: 0;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row1 p {
+    margin: 16px 0 48px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 p {
+    margin-bottom: 12px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group {
+    width: 20%;
+    height: 36px;
+    display: flex;
+    border: 1px solid #C9C9C9;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .form-control {
+    height: 34px;
+    padding: 8px 0 8px 10px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-ascend, main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-descend {
+    height: 16px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-ascend button, main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-descend button {
+    margin: -6px 8px 4px;
+    padding: 0;
+    border: none;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-ascend button span, main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-descend button span {
+    font-size: 0.75rem;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group:hover .buttons {
+    opacity: 1;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 {
+    margin-top: 15%;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0;
+    margin-bottom: 16px;
+    background: #E51827;
+    color: #FFF;
+    font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn .text {
+    opacity: 1;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn .falling-dots {
+    opacity: 0;
+    position: absolute;
+    margin-left: -60px;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn .falling-dots .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 3px;
+    background: #FFF;
+    animation: wave 1.3s linear infinite;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn .falling-dots .dot:nth-child(2) {
+    animation-delay: -1.1s;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn .falling-dots .dot:nth-child(3) {
+    animation-delay: -0.9s;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn:hover {
+    background: #ED5D68;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn.clicked .text {
+    animation: txt1 1.5s ease-in-out forwards;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn.clicked .falling-dots {
+    animation: txt2 1.5s ease-in-out forwards;
+  }
+  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 a {
+    color: #000;
+  }
+  main .features .container-fluid {
+    height: auto;
+  }
+  main .features .container-fluid .text h1 {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  main .features .container-fluid .text p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .features .container-fluid div .card .card-body {
+    height: 120px;
+  }
+  main .about .container-fluid .card {
+    margin: 0 12px;
+  }
+  main .about .container-fluid .card .card-body {
+    padding: 24px 0;
+  }
+  main .about .container-fluid .card .card-body .card-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  main .about .container-fluid .card .card-body .card-text {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .about .container-fluid .card .card-body button a {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .blank .container-fluid {
+    height: 73.3vh;
+    padding: 0;
+    margin: 0 67px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  main .filled .container-fluid {
+    margin-top: 24px;
+  }
+  main .filled .container-fluid .col1 {
+    max-width: 740px;
+    margin-right: 36px;
+  }
+  main .filled .container-fluid .col1 .promo-code, main .filled .container-fluid .col1 .note {
+    border-bottom: none;
+  }
+  main .filled .container-fluid .col2 {
+    max-width: 280px;
+  }
+  main .filled .container-fluid .col2 h5 {
+    display: block;
+  }
+  main .filled .modal .modal-dialog .modal-content {
+    max-width: none;
+    width: 580px;
+    height: 340px;
+    border-radius: 0;
+    padding: 24px;
+    margin: 240px auto;
+  }
+  main .filled .modal .modal-dialog .modal-content .modal-header {
+    padding: 0;
+    border: none;
+  }
+  main .filled .modal .modal-dialog .modal-content .modal-body {
+    max-width: none;
+    width: 380px;
+    padding: 0;
+    margin: 36px auto;
+    text-align: center;
+  }
+  main .filled .modal .modal-dialog .modal-content .modal-body h2 {
+    font: normal 400 33px/43px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .filled .modal .modal-dialog .modal-content .modal-body p {
+    color: #000;
+    margin: 32px 0;
+    font: normal 400 15px/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .filled .modal .modal-dialog .modal-content .modal-body button {
+    width: auto;
+    padding: 8px 42px;
+    border-radius: 0;
+    color: #FFF;
+    background: #000;
+    font: normal 400 15px/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .filled .modal .modal-dialog .modal-content .modal-body button:hover {
+    background: #4C4C4C;
+  }
+  main .productPage .container-fluid {
+    padding: 0 24px;
+    margin-bottom: 24px;
+    /*.carousel {
+        .carousel-inner {
+            .carousel-item {
+                .outer-row2 {
+                    .inner-col1 {
+                        height: auto;
+                    }
+                    .inner-col2 {
+                        .innermost-row3 {
+                            .social-bar {
+                                margin-top: 32px;
+                            }
+                        }
+                    }
+                }
+                .outer-row3 {
+                    width: 56.39%;
+                    max-width: 500px;
+                }                            
+            }
+        }
+    }*/
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
+    height: auto;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar {
+    margin-top: 32px;
+  }
+  main .productPage .container-fluid .outer-row2 .card p {
+    width: 56.39%;
+    max-width: 500px;
+  }
+  main .acknowledgePage .container-fluid {
+    padding: 40px 12px;
+  }
+  main .acknowledgePage .container-fluid .header h4 {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  main .acknowledgePage .container-fluid .header h6 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  main .acknowledgePage .container-fluid .header p {
+    font-size: 0.938rem;
+    line-height: 23px;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5, main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h6 {
+    width: 100px;
+  }
+  main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5 {
+    margin-right: 48px;
+  }
+  main .categoryPage .container-fluid {
+    margin-bottom: 40px;
+  }
+  main .categoryPage .container-fluid .body-content {
+    display: flex;
+    margin-top: 24px;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar {
+    min-width: 242px;
+    display: block;
+    padding-right: 32px;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .browse h4, main .categoryPage .container-fluid .body-content .sidebar .filter h4 {
+    height: 45px;
+    margin: 0;
+    border-bottom: 1px solid #CCCCCC;
+    font: normal 400 1.375rem/30px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .browse {
+    /*ul {
+        padding: 12px 0 0;
+        list-style: none;
+        li  {
+            color: #000;
+            padding: 4px 0;
+            cursor: pointer;
+            &:hover {
+                color: #585858;
+                text-decoration: underline;
+            }                 
+        }
+        .inAction {
+            color: #E51827;
+            text-decoration: underline #E51827;
+        }  
+    }*/
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .browse .category-list {
+    padding: 12px 0;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .browse .category-list button {
+    padding: 8px 0 0;
+    outline: none;
+    border: none;
+    background: none;
+    font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .browse .category-list .active {
+    color: #E51827;
+    border: none;
+    text-decoration: underline;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter {
+    margin-top: 40px;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter, main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter {
+    border-bottom: 1px solid #CCCCCC;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .btn, main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .btn {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    text-align: left;
+    font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .collapse {
+    padding-bottom: 12px;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .collapse .product-option {
+    width: auto;
+    height: auto;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .collapse .product-option input {
+    margin: 0 6px 0 2px;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .collapse .product-option label {
+    font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse {
+    height: 60px;
+    margin-top: -8px;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .range-slider {
+    position: relative;
+    border-radius: 50%;
+    margin: 10px 0 0;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .range-slider .range-fill {
+    height: 3px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 3px;
+    background-color: #000;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .range-slider input[type=range] {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: transparent;
+    -webkit-appearance: none;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .range-slider input[type=range]::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    margin-top: -4px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #000;
+    -webkit-appearance: none;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .range-slider input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    border: none;
+    border-radius: 3px;
+    background-color: #E8E8E8;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .price-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 28px 0 0;
+  }
+  main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .price-content p {
+    color: #000;
+    font: normal 400 16px/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .categoryPage .container-fluid .body-content .product-content {
+    width: 100%;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan .paragraph h2 {
+    margin: 24px 0 8px;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan .paragraph p {
+    max-width: 732px;
+    width: 80%;
+    margin-bottom: 24px;
+    display: block;
+    font: normal 400 16px/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct img {
+    width: 100%;
+    display: block;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar {
+    display: none;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown {
+    display: block;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown .dropdown-menu {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown .dropdown-menu li {
+    color: #000;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown .dropdown-menu li:hover {
+    background: #F0F0F0;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown .dropdown-menu .active {
+    background: #E0E0E0;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown .show span {
+    transform: rotate(180deg);
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown:hover {
+    color: #676768;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown ::after {
+    display: none;
+  }
+  main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card {
+    width: 230px;
+    margin: 0;
+  }
+  main .blogPage .container-fluid {
+    margin: 24px auto;
+  }
+  main .blogPage .container-fluid .all-post .card {
+    margin-bottom: 32px;
+    width: auto;
+  }
+  main .blogPage .container-fluid .all-post .card .img {
+    min-width: 320px;
+    height: 279px;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body {
+    padding-left: 24px;
+    max-width: 480px;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body {
+    padding: 36px 72px;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body .account-info img {
+    width: 50px;
+    height: 50px;
+    margin: -3px 0 0 -10px;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text {
+    display: flex;
+    align-items: center;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text p, main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date {
+    margin: 0;
+  }
+  main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date .bullet:first-child, main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date .read {
+    display: inline;
+  }
+  main .blogPage .container-fluid .post-content .comment-part .card .card-body {
+    padding: 8px 72px 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 774px) and (max-width: 991px) {
+  main .products .container-fluid .carousel .card span {
+    transform: translateY(-30%);
+  }
+  main .products .container-fluid .carousel :hover span {
+    transform: translateY(-125%);
+  }
+}
+@media screen and (min-width: 992px) {
+  header .navbar {
+    padding: 16px;
+  }
+  header .navbar .container-fluid .navbar-brand img {
+    float: left;
+    width: 70px;
+    height: 60px;
+  }
+  header .navbar .container-fluid .cart-btn img {
+    width: 45px;
+    height: 50px;
+  }
+  header .navbar .container-fluid .cart-btn span {
+    width: auto;
+    padding: 3px 17.5px;
+    top: 23px;
+  }
+  main .welcome .container-fluid .card {
+    width: 48%;
+    margin-left: 44px;
+  }
+  main .welcome .container-fluid .card .card-body {
+    padding: 72.4px 0;
+  }
+  main .welcome .container-fluid .card .card-body .card-title {
+    margin: 0 auto 20px;
+    font-size: 1.688rem;
+    line-height: 35px;
+  }
+  main .welcome .container-fluid .card .card-body .card-text {
+    font-size: 1.188rem;
+    line-height: 27px;
+  }
+  main .features .container-fluid {
+    padding: 0 24px;
+  }
+  main .features .container-fluid .text h1 {
+    font-size: 1.688rem;
+    line-height: 35px;
+  }
+  main .features .container-fluid .text p {
+    font-size: 1.188rem;
+    line-height: 27px;
+  }
+  main .features .container-fluid div .card {
+    width: auto;
+    height: auto;
+  }
+  main .features .container-fluid div .card picture {
+    width: 300px;
+    height: 300px;
+  }
+  main .features .container-fluid div .card .card-body {
+    width: auto;
+    height: 200px;
+    padding: 40px 0 0;
+    bottom: -2%;
+  }
+  main .features .container-fluid div .card .card-body .card-title {
+    font-size: 1.188rem;
+    line-height: 27px;
+  }
+  main .features .container-fluid div .card .card-body .card-text {
+    font-size: 1.125rem;
+    line-height: 26px;
+  }
+  main .products .container-fluid i:first-child {
+    left: 30px;
+  }
+  main .products .container-fluid i:last-child {
+    right: 33px;
+  }
+  main .products .container-fluid .carousel {
+    grid-auto-columns: calc(33.3333333333% - 12px);
+  }
+  main .about .container-fluid {
+    padding: 0 16px;
+  }
+  main .about .container-fluid .card {
+    justify-content: center;
+  }
+  main .about .container-fluid .card .card-body {
+    width: 900px;
+  }
+  main .about .container-fluid .card .card-body .card-title {
+    font-size: 1.688rem;
+    line-height: 35px;
+  }
+  main .about .container-fluid .card .card-body .card-text, main .about .container-fluid .card .card-body button a {
+    font-size: 1.063rem;
+    line-height: 25px;
+  }
+  main .blank .container-fluid {
+    height: 73.7vh;
+    margin: 0 98px;
+  }
+  main .filled .container-fluid {
+    margin: 24px 32px 0;
+  }
+  main .filled .container-fluid .col1 .card .card-footer p {
+    margin: 0 24px 0 0;
+  }
+  main .filled .container-fluid .col1 .note .collapse .content textarea {
+    height: 6em;
+  }
+  main .filled .container-fluid .col2 {
+    max-width: 360px;
+  }
+  main .productPage .container-fluid {
+    padding: 0 44px;
+    margin: 48px auto 24px;
+    /*.carousel {
+        .carousel-inner {
+            .carousel-item {
+                .outer-row2 {
+                    margin-top: 32px;
+                    .inner-col2 {
+                        .innermost-row1 {
+                            margin-top: 8px;
+                            h4 {
+                                margin: 0;
+                                font-size: 22px;
+                                line-height: 30px;
+                            }
+                            p {
+                                margin: 24px 0;
+                                font-size: 19px;
+                                line-height: 27px;
+                            }
+                        }
+                        .innermost-row2 {
+                            p {
+                                font-size: 15px;
+                                line-height: 23px;
+                            }
+                        }
+                        .innermost-row3 {
+                            .btn {
+                                font-size: 17px;
+                                line-height: 25px;
+                            }
+                            .social-bar {
+                                font-size: 18px;
+                                ul {
+                                    li {
+                                        margin: 0 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }*/
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt {
+    margin: 24px 0;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  main .productPage .container-fluid .outer-row1 .second-opt .btns .btn {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  main .productPage .container-fluid .outer-row2 {
+    margin-top: 32px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 {
+    margin-top: 8px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 h4 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 p {
+    margin: 24px 0;
+    font-size: 19px;
+    line-height: 27px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar {
+    font-size: 18px;
+  }
+  main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .social-bar ul li {
+    margin: 0 12px;
+  }
+  main .categoryPage .container-fluid {
+    padding: 0 28px;
+  }
+  main .policyPage .container-fluid {
+    padding: 24px 28px;
+  }
+  main .policyPage .container-fluid .policy, main .policyPage .container-fluid .return, main .policyPage .container-fluid .warranty, main .policyPage .container-fluid .privacy {
+    padding: 48px 0;
+  }
+  main .policyPage .container-fluid .policy h2, main .policyPage .container-fluid .return h2, main .policyPage .container-fluid .warranty h2, main .policyPage .container-fluid .privacy h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  main .policyPage .container-fluid .policy h6, main .policyPage .container-fluid .return h6, main .policyPage .container-fluid .warranty h6, main .policyPage .container-fluid .privacy h6 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  main .policyPage .container-fluid .policy p, main .policyPage .container-fluid .return p, main .policyPage .container-fluid .warranty p, main .policyPage .container-fluid .privacy p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  main .policyPage .container-fluid .policy button, main .policyPage .container-fluid .return button, main .policyPage .container-fluid .warranty button, main .policyPage .container-fluid .privacy button {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  main .blogPage .container-fluid {
+    width: auto;
+  }
+  main .blogPage .container-fluid .all-post .card {
+    max-width: 980px;
+  }
+  main .blogPage .container-fluid .all-post .card .img {
+    width: 476px;
+    height: 320px;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body {
+    padding: 16px 32px;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-text {
+    height: 180px;
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-text h5 {
+    font-size: clamp(1.188rem, 2.232vw + 0.116rem, 1.5rem);
+    line-height: clamp(1.603rem, 3.013vw + 0.157rem, 2.025rem);
+  }
+  main .blogPage .container-fluid .all-post .card .card-body .post-text p {
+    font-size: clamp(0.875rem, 0.446vw + 0.661rem, 0.938rem);
+    line-height: clamp(1.181rem, 1.942vw + 0.249rem, 1.453rem);
+  }
+  footer .container-fluid a {
+    font-size: 0.938rem;
+    line-height: 23px;
+  }
+  footer .container-fluid div {
+    font-size: 0.813rem;
+    line-height: 21px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1161px) {
+  main .products .container-fluid .carousel .card span {
+    transform: translateY(-30%);
+  }
+  main .products .container-fluid .carousel :hover span {
+    transform: translateY(-125%);
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1060px) {
+  main .filled .container-fluid {
+    margin: 36px auto 0;
+  }
+  main .filled .container-fluid .col1 {
+    margin-right: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .navbar {
+    padding: 16px 88px;
+  }
+  main .welcome .container-fluid {
+    height: 400px;
+  }
+  main .welcome .container-fluid .card {
+    width: 48%;
+    margin-left: 116px;
+    top: 50px;
+  }
+  main .welcome .container-fluid .card .card-body {
+    padding: 95px 0;
+  }
+  main .welcome .container-fluid .card .card-body .card-title {
+    font-size: 3.875rem;
+    line-height: 70px;
+  }
+  main .features .container-fluid {
+    padding: 0 80px;
+  }
+  main .features .container-fluid .text h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 48px;
+  }
+  main .products .container-fluid {
+    margin: 60px 0 0;
+    padding: 0;
+  }
+  main .products .container-fluid i {
+    top: 32%;
+    transform: translateY(-32%);
+  }
+  main .products .container-fluid i:first-child {
+    left: 60px;
+  }
+  main .products .container-fluid i:last-child {
+    right: 63px;
+  }
+  main .products .productModal .modal-xl {
+    --bs-modal-width: 800px;
+  }
+  main .about .container-fluid {
+    padding: 0 88px;
+  }
+  main .about .container-fluid .card {
+    height: 620px;
+  }
+  main .about .container-fluid .card img {
+    width: 490px;
+  }
+  main .about .container-fluid .card .card-body .card-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 48px;
+  }
+  main .about .container-fluid .card .card-body .card-text {
+    margin: 12px 16px;
+  }
+  main .about .container-fluid .card .card-body button {
+    margin: 88px 0 0;
+  }
+  main .blank .container-fluid {
+    height: 71.3vh;
+    margin: 0 auto;
+  }
+  footer .container-fluid a {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  footer .container-fluid div {
+    font-size: 0.938rem;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .navbar {
+    padding: 16px 100px;
+  }
+  main .welcome .container-fluid {
+    padding: 0 100px;
+    height: 550px;
+  }
+  main .welcome .container-fluid picture {
+    left: 0%;
+    right: 0%;
+  }
+  main .welcome .container-fluid .card {
+    margin-left: 28px;
+    top: 69px;
+  }
+  main .welcome .container-fluid .card .card-body {
+    padding: 151px 0;
+  }
+  main .features .container-fluid {
+    padding: 0px 100px;
+  }
+  main .features .container-fluid div {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  main .features .container-fluid div .card picture {
+    width: 368.5px;
+    max-width: 508px;
+  }
+  main .products {
+    height: auto;
+    margin: 0 0 60px;
+  }
+  main .products .container-fluid {
+    height: 100%;
+  }
+  main .products .container-fluid .carousel {
+    width: 85.6%;
+    grid-auto-columns: calc(25% - 12px);
+  }
+  main .products .container-fluid .carousel .card img {
+    height: auto;
+  }
+  main .products .container-fluid .carousel .card span {
+    transform: translateY(-75%);
+  }
+  main .products .container-fluid .carousel :hover span {
+    transform: translateY(-165%);
+  }
+  main .about .container-fluid {
+    padding: 0px 88px;
+  }
+  main .about .container-fluid .card img {
+    width: 50%;
+  }
+  main .about .container-fluid .card .card-body .card-title {
+    margin-top: 6px;
+  }
+  main .about .container-fluid .card .card-body .card-text {
+    width: 492px;
+    margin: 12px 0px;
+  }
+  main .about .container-fluid .card button {
+    margin: 108px 0 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .navbar {
+    padding: 16px 130px;
+  }
+  header .navbar .container-fluid .navbar-collapse {
+    margin-right: 60px;
+  }
+  main .welcome .container-fluid {
+    padding: 0 130px;
+  }
+  main .features .container-fluid div {
+    width: auto;
+  }
+  main .features .container-fluid div .card {
+    width: 100%;
+    max-width: 508px;
+  }
+  main .features .container-fluid div .card picture {
+    width: 100%;
+    max-width: 508px;
+  }
+  main .products .container-fluid i {
+    top: 45%;
+    transform: translateY(-45%);
+  }
+  main .products .container-fluid .carousel {
+    width: 86%;
+  }
+  main .products .container-fluid .carousel .card span {
+    transform: translateY(-30%);
+  }
+  main .products .container-fluid .carousel :hover span {
+    transform: translateY(-125%);
+  }
+  main .about .container-fluid {
+    padding: 0 118px;
+  }
+}/*# sourceMappingURL=main.css.map */

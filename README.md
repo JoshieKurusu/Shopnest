@@ -1,5 +1,5 @@
 # ShopNest
-ShopNest E-Commerce
+ShopNest E-Commerce Website
 
 # Description
 It is a e-commerce website that contains a fashion and trendy accessories.

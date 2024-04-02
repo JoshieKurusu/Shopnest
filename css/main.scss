@@ -2403,7 +2403,9 @@ footer {
                 }
             }
             .offcanvas-body {
-                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 padding: 32px;
                 overflow-y: hidden;
                 .listItem {
@@ -2481,7 +2483,7 @@ footer {
                     }
                 }
                 .checkout {
-                    
+                    margin-top: auto;
                     h6 {
                         margin: 0;
                         font: normal 400 1.5rem/32px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

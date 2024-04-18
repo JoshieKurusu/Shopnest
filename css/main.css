@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:ital@0;1&display=swap");
 @keyframes wave {
   0%, 60%, 100% {
     transform: initial;
@@ -125,7 +125,11 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav {
 header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 12px 24px;
   color: #000;
-  font: normal 400 1.125rem/29px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, -0.893vw + 1.429rem, 1.25rem);
+  line-height: clamp(1.094rem, -1.116vw + 1.786rem, 1.563rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
   color: #E71D1D;
@@ -135,6 +139,7 @@ header .navbar .container-fluid .cart-btn {
   border: none;
   outline: none;
   margin-left: auto;
+  pointer-events: none;
 }
 header .navbar .container-fluid .cart-btn img {
   width: 40px;
@@ -147,10 +152,14 @@ header .navbar .container-fluid .cart-btn span {
   position: absolute;
   text-align: center;
   top: 17px;
-  padding: 3px 15px;
+  padding: 0px 15px;
   background: none;
   color: #E71D1D;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header .navbar .container-fluid .cart-btn:disabled {
   pointer-events: all;
@@ -184,22 +193,38 @@ main .welcome .container-fluid .card .card-body {
 }
 main .welcome .container-fluid .card .card-body .card-title {
   color: #E71D1D;
-  font: normal 600 1.5rem/46px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.938rem, 6.101vw + 0.717rem, 4.5rem);
+  line-height: clamp(2.422rem, 7.626vw + 0.897rem, 5.625rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .welcome .container-fluid .card .card-body .card-text {
   color: #000;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.063rem, 0.446vw + 0.973rem, 1.25rem);
+  line-height: clamp(1.774rem, 0.746vw + 1.625rem, 2.088rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .features .container-fluid {
   padding: 0;
 }
 main .features .container-fluid .text h1 {
   color: #E71D1D;
-  font: normal 600 1.5rem/46px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.5rem, 2.381vw + 1.024rem, 2.5rem);
+  line-height: clamp(2.025rem, 3.214vw + 1.382rem, 3.375rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .features .container-fluid .text p {
   color: #000;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+  line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .features .container-fluid div .card {
   width: 322px;
@@ -229,12 +254,20 @@ main .features .container-fluid div .card .card-body {
 }
 main .features .container-fluid div .card .card-body .card-title {
   color: #E71D1D;
-  font: normal 600 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.25rem, 0.298vw + 1.19rem, 1.375rem);
+  line-height: clamp(1.763rem, 0.42vw + 1.679rem, 1.939rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .features .container-fluid div .card .card-body .card-text {
   margin-top: 8px;
   color: #000;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+  line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .products .container-fluid {
   width: auto;
@@ -306,11 +339,19 @@ main .products .container-fluid .carousel .card .card-body {
 main .products .container-fluid .carousel .card .card-body .card-title {
   margin: 0 0 8px;
   color: #000;
-  font: normal 600 0.938rem/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+  line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .products .container-fluid .carousel .card .card-body .card-text {
   color: #000;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.149vw + 0.908rem, 1rem);
+  line-height: clamp(1.406rem, 0.223vw + 1.362rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .products .container-fluid ::-webkit-scrollbar {
   display: none;
@@ -356,12 +397,20 @@ main .about .container-fluid .card-body .card-title, main .about .container-flui
 main .about .container-fluid .card-body .card-title {
   margin-bottom: 12px;
   color: #E71D1D;
-  font: normal 600 1.5rem/46px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.5rem, 2.381vw + 1.024rem, 2.5rem);
+  line-height: clamp(2.025rem, 3.214vw + 1.382rem, 3.375rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .about .container-fluid .card-body .card-text {
   margin: 0;
   color: #000;
-  font: normal 400 0.938rempx/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+  line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .about .container-fluid .card-body button {
   margin: 16px 0 0;
@@ -374,7 +423,11 @@ main .about .container-fluid .card-body button {
 main .about .container-fluid .card-body button a {
   text-decoration: none;
   color: #E71D1D;
-  font: normal 400 0.875rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.149vw + 0.845rem, 0.938rem);
+  line-height: clamp(1.313rem, 0.223vw + 1.268rem, 1.406rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .about .container-fluid .card-body button:hover {
   background: #E71D1D;
@@ -398,7 +451,11 @@ main .blank .container-fluid .header {
   border-bottom: 1px solid #CCCCCC;
 }
 main .blank .container-fluid .header h5 {
-  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blank .container-fluid .body {
   margin: 0;
@@ -408,11 +465,19 @@ main .blank .container-fluid .body {
   transform: translateY(-60%);
 }
 main .blank .container-fluid .body h4 {
-  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+  line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blank .container-fluid .body a {
   color: #000;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blank .container-fluid .body a:hover {
   color: #949494;
@@ -433,7 +498,11 @@ main .filled .container-fluid .col1 h5 {
   margin: 0;
   padding: 16px 0;
   border-bottom: 1px solid #CCCCCC;
-  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col1 .card {
   width: auto;
@@ -467,11 +536,19 @@ main .filled .container-fluid .col1 .card .card-body {
 }
 main .filled .container-fluid .col1 .card .card-body h6 {
   margin: 0;
-  font: normal 600 0.875rem/20px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+  line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col1 .card .card-body p {
   margin: 20px 0 24px;
-  font: normal 400 0.875rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+  line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .container-fluid .col1 .card .card-body .input-group {
   width: 80px;
@@ -494,7 +571,11 @@ main .filled .container-fluid .col1 .card .card-body .input-group .form-control 
   border: none;
   padding: 0;
   text-align: center;
-  font: normal 400 0.75rem/16px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0vw + 0.875rem, 0.875rem);
+  line-height: clamp(1.313rem, 0vw + 1.313rem, 1.313rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .container-fluid .col1 .card .card-body :hover {
   background: none;
@@ -506,7 +587,11 @@ main .filled .container-fluid .col1 .card .card-footer {
 }
 main .filled .container-fluid .col1 .card .card-footer p {
   margin: auto 0 4px;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.149vw + 0.908rem, 1rem);
+  line-height: clamp(1.406rem, 0.223vw + 1.362rem, 1.5rem);
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .container-fluid .col1 .card .card-footer button {
   margin-left: auto;
@@ -539,7 +624,11 @@ main .filled .container-fluid .col1 .promo-code .collapse .content .form-control
 main .filled .container-fluid .col1 .promo-code .collapse .content button, main .filled .container-fluid .col1 .note .collapse .content button {
   display: inline;
   border: 1px solid #E51827;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col1 .promo-code .collapse .content ::-moz-placeholder, main .filled .container-fluid .col1 .note .collapse .content ::-moz-placeholder {
   color: #000;
@@ -557,7 +646,11 @@ main .filled .container-fluid .col2 h5 {
   margin: 0;
   padding: 16px 0;
   border-bottom: 1px solid #CCCCCC;
-  font: normal 600 1.125rem/28px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col2 .card {
   border: none;
@@ -574,15 +667,27 @@ main .filled .container-fluid .col2 .card .card-body .subtotal-price, main .fill
 }
 main .filled .container-fluid .col2 .card .card-body .subtotal-price h6, main .filled .container-fluid .col2 .card .card-body .delivery-fee h6, main .filled .container-fluid .col2 .card .card-body .location h6 {
   margin: 12px 0;
-  font: normal 600 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col2 .card .card-body .subtotal-price p, main .filled .container-fluid .col2 .card .card-body .delivery-fee p, main .filled .container-fluid .col2 .card .card-body .location p {
   margin: 12px 0;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .container-fluid .col2 .card .card-body .location a {
   color: #000;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col2 .card .card-body .location a:hover {
   color: #646464;
@@ -600,11 +705,19 @@ main .filled .container-fluid .col2 .card .card-footer .total-price {
 }
 main .filled .container-fluid .col2 .card .card-footer .total-price h6 {
   margin: 0;
-  font: normal 600 1.063rem/26px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col2 .card .card-footer .total-price p {
   margin: 0;
-  font: normal 400 1.125rem/28px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+  line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .container-fluid .col2 .card .card-footer .btn {
   width: 100%;
@@ -613,14 +726,22 @@ main .filled .container-fluid .col2 .card .card-footer .btn {
   padding: 8px 16px;
   border-radius: 0;
   background: #E51827;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .container-fluid .col2 .card .card-footer .btn:hover {
   background: #EB4652;
 }
 main .filled .container-fluid .col2 .card .card-footer p {
   padding: 8px 0 16px;
-  font: normal 400 0.938rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+  line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .container-fluid .col2 .card .card-footer p i {
   margin-right: 8px;
@@ -645,12 +766,20 @@ main .filled .modal .modal-dialog .modal-content .modal-body {
 }
 main .filled .modal .modal-dialog .modal-content .modal-body h2 {
   margin: 0;
-  font: normal 400 1.5rem/36px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.5rem, 0.595vw + 1.381rem, 1.75rem);
+  line-height: clamp(2.25rem, 0.893vw + 2.071rem, 2.625rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .modal .modal-dialog .modal-content .modal-body p {
   color: #000;
   margin: 32px 0;
-  font: normal 400 0.875rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+  line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .filled .modal .modal-dialog .modal-content .modal-body button {
   width: 100%;
@@ -658,7 +787,11 @@ main .filled .modal .modal-dialog .modal-content .modal-body button {
   border-radius: 0;
   color: #FFF;
   background: #000;
-  font: normal 400 0.938rem/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .filled .modal .modal-dialog .modal-content .modal-body button:hover {
   background: #4C4C4C;
@@ -671,7 +804,11 @@ main .productPage .container-fluid {
 }
 main .productPage .container-fluid .outer-row1 .first-opt, main .productPage .container-fluid .outer-row1 .second-opt {
   margin: 16px 0;
-  font: normal 400 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.298vw + 0.878rem, 1.063rem);
+  line-height: clamp(1.406rem, 0.446vw + 1.317rem, 1.594rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .productPage .container-fluid .outer-row1 .first-opt a, main .productPage .container-fluid .outer-row1 .second-opt a {
   color: #6F6F70;
@@ -703,14 +840,26 @@ main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 img 
      object-fit: cover;
 }
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 h4 {
-  font: normal 600 1.313rem/29px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row1 p {
-  font: normal 400 1.125rem/26px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+  line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 p {
   margin-bottom: 12px;
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group {
   width: 76px;
@@ -721,7 +870,11 @@ main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .inn
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .form-control {
   height: 34px;
   padding: 8px 0 8px 10px;
-  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0vw + 0.938rem, 0.938rem);
+  line-height: clamp(1.406rem, 0vw + 1.406rem, 1.406rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row2 .input-group .buttons {
   display: flex;
@@ -754,7 +907,11 @@ main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .inn
   border-radius: 0;
   background: #E51827;
   color: #FFF;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.125rem, 0.298vw + 1.065rem, 1.25rem);
+  line-height: clamp(1.688rem, 0.446vw + 1.598rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .innermost-row3 .btn .text {
   opacity: 1;
@@ -808,7 +965,11 @@ main .productPage .container-fluid .outer-row2 .card .card-body .inner-col2 .inn
 main .productPage .container-fluid .outer-row2 .card p {
   margin-bottom: 12px;
   color: #000;
-  font: normal 400 1.063rem/25px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.063rem, 0.595vw + 0.943rem, 1.313rem);
+  line-height: clamp(1.594rem, 0.893vw + 1.415rem, 1.969rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .productPage .container-fluid .outer-row2 .active {
   display: block;
@@ -822,13 +983,25 @@ main .acknowledgePage .container-fluid .header {
   text-align: center;
 }
 main .acknowledgePage .container-fluid .header h4 {
-  font: normal 600 1.188rem/25px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+  line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .acknowledgePage .container-fluid .header h6 {
-  font: normal 400 0.875rem/21px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .acknowledgePage .container-fluid .header p {
-  font: normal 400 0.813rem/21px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card {
   margin-bottom: 32px;
@@ -853,11 +1026,19 @@ main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 i
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 .product-list h5 {
   margin-bottom: 12px;
-  font: normal 600 0.875rem/22px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+  line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 .product-list h6, main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col1 .product-list p {
   margin: 0;
-  font: normal 400 0.813rem/21px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 {
   color: #000;
@@ -867,11 +1048,19 @@ main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 {
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5 {
   margin: 0;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h6 {
   margin: 0 0 0 auto;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 {
   padding: 16px 0;
@@ -879,11 +1068,19 @@ main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 h6 {
   margin: 0;
-  font: normal 600 0.813rem/21px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col1 p {
   margin: 0;
-  font: normal 400 0.813rem/21px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .subtotal-price, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .delivery-fee, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .sales-tax, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .total-price, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .subtotal-price, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .delivery-fee, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .sales-tax, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price {
   display: flex;
@@ -892,10 +1089,18 @@ main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 
   color: #000;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .subtotal-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .delivery-fee h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .sales-tax h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .total-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .subtotal-price h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .delivery-fee h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .sales-tax h6, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price h6 {
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .subtotal-price p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .delivery-fee p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .sales-tax p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 .total-price p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .subtotal-price p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .delivery-fee p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .sales-tax p, main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row2 .total-price p {
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-row2 .second-col2 .inner-row1 {
   padding: 16px 0;
@@ -915,11 +1120,19 @@ main .acknowledgePage .container-fluid .card .card-body .body-col1 .header, main
 }
 main .acknowledgePage .container-fluid .card .card-body .body-col1 .header h5, main .acknowledgePage .container-fluid .card .card-body .body-col2 .header h5 {
   margin-bottom: 16px;
-  font: normal 600 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-col1 .body p, main .acknowledgePage .container-fluid .card .card-body .body-col2 .body p {
   margin-bottom: 6px;
-  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+  line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .acknowledgePage .container-fluid .card .card-body .body-col1 {
   padding: 0 0 16px;
@@ -932,7 +1145,11 @@ main .acknowledgePage .container-fluid a {
   align-items: center;
   justify-content: center;
   color: #000;
-  font: normal 400 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+  line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .categoryPage .container-fluid {
   display: flex;
@@ -942,7 +1159,10 @@ main .categoryPage .container-fluid .header-btn {
   width: auto;
   display: flex;
   margin: 6px 0 12px;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .header-btn a {
   color: #000;
@@ -973,7 +1193,11 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .al
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist .paragraph h2, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan .paragraph h2 {
   margin: 12px 0 16px;
-  font: normal 400 1.625rem/34px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.625rem, 0.595vw + 1.506rem, 1.875rem);
+  line-height: clamp(2.438rem, 0.893vw + 2.259rem, 2.813rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .ecofriendly .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .minimalist .paragraph p, main .categoryPage .container-fluid .body-content .product-content .top-part .vegan .paragraph p {
   display: none;
@@ -991,7 +1215,11 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .pr
   -moz-column-gap: 8px;
        column-gap: 8px;
   margin-bottom: 8px;
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .product-filter-choice button {
   margin: 8px 0 0;
@@ -1019,12 +1247,20 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .to
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 p {
   margin: 0;
-  font: normal 400 0.875rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar button {
   padding: 0;
   text-decoration: underline;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas {
   width: 320px;
@@ -1034,11 +1270,19 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .to
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-header h3 {
   margin: 0;
-  font: normal 400 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.625rem, 0.595vw + 1.506rem, 1.875rem);
+  line-height: clamp(2.438rem, 0.893vw + 2.259rem, 2.813rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-header p {
   margin: 6px 0 0 -48px;
-  font: normal 400 14px/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body {
   padding-top: 0;
@@ -1052,7 +1296,11 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .to
   outline: none;
   border: none;
   text-decoration: none;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse {
   padding-top: 4px;
@@ -1061,7 +1309,11 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .to
   margin: 10px 8px 6px 0;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse label, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse label {
-  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse .product-option, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse .product-option {
   margin: 4px 0;
@@ -1070,7 +1322,11 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .to
   margin-right: 3px;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .sort-by .collapse .product-option label, main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .product-filter .collapse .product-option label {
-  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+  line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse {
   height: 60px;
@@ -1123,7 +1379,11 @@ main .categoryPage .container-fluid .body-content .product-content .top-part .to
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .hidden-sidebar .offcanvas .offcanvas-body .price-filter .collapse .price-content p {
   color: #000;
-  font: normal 400 16px/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .top-part .top-part-row3 .dropdown {
   display: none;
@@ -1147,11 +1407,19 @@ main .categoryPage .container-fluid .body-content .product-content .item-list .a
   padding: 12px 0 0;
 }
 main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card .card-body h6, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card .card-body h6, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card .card-body h6, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card .card-body h6 {
-  font: normal 600 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .item-list .allProductItem .card .card-body p, main .categoryPage .container-fluid .body-content .product-content .item-list .ecofriendlyItem .card .card-body p, main .categoryPage .container-fluid .body-content .product-content .item-list .minimalistItem .card .card-body p, main .categoryPage .container-fluid .body-content .product-content .item-list .veganItem .card .card-body p {
   margin: 0;
-  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0vw + 1rem, 1rem);
+  line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .categoryPage .container-fluid .body-content .product-content .item-list .effective {
   display: flex;
@@ -1172,16 +1440,28 @@ main .policyPage .container-fluid .policy img, main .policyPage .container-fluid
 main .policyPage .container-fluid .policy h2, main .policyPage .container-fluid .return h2, main .policyPage .container-fluid .warranty h2, main .policyPage .container-fluid .privacy h2 {
   margin-bottom: 8px;
   color: #E71D1D;
-  font: normal 600 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.5rem, 2.381vw + 1.024rem, 2.5rem);
+  line-height: clamp(2.025rem, 3.214vw + 1.382rem, 3.375rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .policyPage .container-fluid .policy h6, main .policyPage .container-fluid .return h6, main .policyPage .container-fluid .warranty h6, main .policyPage .container-fluid .privacy h6 {
   margin-bottom: 16px;
   color: #000;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+  line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .policyPage .container-fluid .policy p, main .policyPage .container-fluid .return p, main .policyPage .container-fluid .warranty p, main .policyPage .container-fluid .privacy p {
   margin-bottom: 24px;
-  font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.149vw + 0.845rem, 0.938rem);
+  line-height: clamp(1.645rem, 0.28vw + 1.589rem, 1.763rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .policyPage .container-fluid .policy button, main .policyPage .container-fluid .return button, main .policyPage .container-fluid .warranty button, main .policyPage .container-fluid .privacy button {
   padding: 8px 16px;
@@ -1189,7 +1469,11 @@ main .policyPage .container-fluid .policy button, main .policyPage .container-fl
   border: 3px solid #E71D1D;
   color: #E71D1D;
   transition: 0.35s ease-in-out;
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.149vw + 0.845rem, 0.938rem);
+  line-height: clamp(1.645rem, 0.28vw + 1.589rem, 1.763rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .policyPage .container-fluid .policy button:hover, main .policyPage .container-fluid .return button:hover, main .policyPage .container-fluid .warranty button:hover, main .policyPage .container-fluid .privacy button:hover {
   color: #FFF;
@@ -1215,7 +1499,11 @@ main .blogPage .container-fluid .body-header .lower-pixels {
 main .blogPage .container-fluid .body-header .lower-pixels p {
   margin: 0;
   color: #FFF;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blogPage .container-fluid .body-header .lower-pixels button {
   margin-left: auto;
@@ -1301,10 +1589,18 @@ main .blogPage .container-fluid .all-post .card .card-body .post-text {
   cursor: pointer;
 }
 main .blogPage .container-fluid .all-post .card .card-body .post-text h5 {
-  font: normal 400 1.188rem/27px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+  line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blogPage .container-fluid .all-post .card .card-body .post-text p {
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.938rem, 0vw + 0.938rem, 0.938rem);
+  line-height: clamp(1.406rem, 0vw + 1.406rem, 1.406rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .blogPage .container-fluid .all-post .card .card-body .post-text p:hover {
   color: #E8343E;
@@ -1327,7 +1623,11 @@ main .blogPage .container-fluid .all-post .card .card-body .post-engagement .vie
 }
 main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers span, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .comments button span, main .blogPage .container-fluid .all-post .card .card-body .post-engagement .hearts button span {
   margin: 0 8px;
-  font: normal 400 0.75rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+  line-height: clamp(1.125rem, 0.446vw + 1.036rem, 1.313rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .blogPage .container-fluid .all-post .card .card-body .post-engagement .viewers {
   margin-bottom: -1px;
@@ -1395,7 +1695,11 @@ main .blogPage .container-fluid .post-content .card .card-body .account-info img
 main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text p {
   cursor: default;
   margin: 4px 0 0;
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+  line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .blogPage .container-fluid .post-content .card .card-body .account-info .account-text .date {
   cursor: auto;
@@ -1439,14 +1743,22 @@ main .blogPage .container-fluid .post-content .card .card-body .content-text {
 }
 main .blogPage .container-fluid .post-content .card .card-body .content-text h5 {
   margin: 32px 0;
-  font: normal 400 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+  line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blogPage .container-fluid .post-content .card .card-body .content-text .paragraph {
   text-align: center;
 }
 main .blogPage .container-fluid .post-content .card .card-body .content-text .paragraph p {
   margin-bottom: 24px;
-  font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .blogPage .container-fluid .post-content .card .card-body .img {
   width: 360px;
@@ -1492,7 +1804,11 @@ main .blogPage .container-fluid .post-content .card .card-body .post-engagement 
 }
 main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers span, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .comments button span, main .blogPage .container-fluid .post-content .card .card-body .post-engagement .hearts button span {
   margin: 0 8px;
-  font: normal 400 0.75rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+  line-height: clamp(1.125rem, 0.446vw + 1.036rem, 1.313rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 main .blogPage .container-fluid .post-content .card .card-body .post-engagement .viewers {
   margin-bottom: -1px;
@@ -1577,10 +1893,18 @@ main .blogPage .container-fluid .post-content .recent-post .caption {
 }
 main .blogPage .container-fluid .post-content .recent-post .caption h6 {
   margin: 0;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blogPage .container-fluid .post-content .recent-post .caption button {
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blogPage .container-fluid .post-content .recent-post .caption button:hover {
   color: #E8343E;
@@ -1603,7 +1927,11 @@ main .blogPage .container-fluid .post-content .comment-part .card .card-body .la
 }
 main .blogPage .container-fluid .post-content .comment-part .card .card-body .label p {
   margin: 0;
-  font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+  line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 main .blogPage .container-fluid .post-content .comment-part .card .card-body .label img {
   width: 45px;
@@ -1633,7 +1961,11 @@ footer .container-fluid a {
   width: 100%;
   text-decoration: none;
   color: #000;
-  font: normal 400 0.875rem/22px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.875rem, -0.149vw + 0.967rem, 0.938rem);
+  line-height: clamp(1.645rem, -0.28vw + 1.818rem, 1.763rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 footer .container-fluid .social-bar {
   width: auto;
@@ -1653,7 +1985,11 @@ footer .container-fluid .social-bar ul li a i {
   padding: 4px 8px;
 }
 footer .container-fluid div {
-  font: normal 400 0.75rem/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+  line-height: clamp(1.343rem, 0.533vw + 1.236rem, 1.566rem);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media screen and (min-width: 375px) {
@@ -1662,10 +1998,6 @@ footer .container-fluid div {
   }
   main .productPage .container-fluid {
     padding: 0 32px;
-  }
-  main .productPage .container-fluid .outer-row1 .first-opt {
-    font-size: 1rem;
-    line-height: 24px;
   }
   main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
     height: 271px;
@@ -1708,10 +2040,6 @@ footer .container-fluid div {
   }
   main .productPage .container-fluid {
     padding: 0 40px;
-  }
-  main .productPage .container-fluid .outer-row1 .first-opt {
-    font-size: 1rem;
-    line-height: 24px;
   }
   main .productPage .container-fluid .outer-row2 .card .card-body .inner-col1 {
     height: 305px;
@@ -2078,6 +2406,9 @@ footer .container-fluid div {
   header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .active {
     color: #000 !important;
   }
+  header .navbar .container-fluid .cart-btn {
+    pointer-events: all;
+  }
   header .navbar .container-fluid form {
     width: 25%;
     height: 45px;
@@ -2107,15 +2438,20 @@ footer .container-fluid div {
   header .offcanvas .offcanvas-header h3 {
     color: #FFF;
     margin: 0 auto;
-    font: normal 400 1.5rem/32px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.5rem, 0.595vw + 1.381rem, 1.75rem);
+    line-height: clamp(2.25rem, 0.893vw + 2.071rem, 2.625rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   header .offcanvas .offcanvas-body {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 32px;
     overflow-y: hidden;
   }
   header .offcanvas .offcanvas-body .listItem {
-    height: 65vh;
     padding: 0;
     overflow-y: scroll;
   }
@@ -2136,11 +2472,19 @@ footer .container-fluid div {
   }
   header .offcanvas .offcanvas-body .listItem .card .card-body h6 {
     margin: 0;
-    font: normal 600 0.938rem/23px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   header .offcanvas .offcanvas-body .listItem .card .card-body p {
     margin: 8px 0 12px;
-    font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
   header .offcanvas .offcanvas-body .listItem .card .card-body .input-group {
     width: 80px;
@@ -2162,7 +2506,11 @@ footer .container-fluid div {
     border: none;
     padding: 0;
     text-align: center;
-    font: normal 400 0.75/20px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+    line-height: clamp(1.125rem, 0.446vw + 1.036rem, 1.313rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
   header .offcanvas .offcanvas-body .listItem .card .card-body :hover {
     background: none;
@@ -2184,13 +2532,24 @@ footer .container-fluid div {
   header .offcanvas .offcanvas-body .listItem::-webkit-scrollbar {
     background: none;
   }
+  header .offcanvas .offcanvas-body .checkout {
+    margin-top: auto;
+  }
   header .offcanvas .offcanvas-body .checkout h6 {
     margin: 0;
-    font: normal 400 1.5rem/32px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+    line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   header .offcanvas .offcanvas-body .checkout p {
     margin: 0;
-    font: normal 400 1.375rem/30px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+    line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
   header .offcanvas .offcanvas-footer {
     height: 100px;
@@ -2209,7 +2568,11 @@ footer .container-fluid div {
     padding: 14px 104px;
     color: #FFF;
     text-decoration: none;
-    font: normal 400 1.125rem/26px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.063rem, 0.595vw + 0.943rem, 1.313rem);
+    line-height: clamp(1.594rem, 0.893vw + 1.415rem, 1.969rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   header .show .offcanvas-header button i {
     transform: rotate(180deg);
@@ -2244,13 +2607,9 @@ footer .container-fluid div {
   }
   main .welcome .container-fluid .card .card-body .card-title {
     margin: 0 auto;
-    font-size: 1.5rem;
-    line-height: 32px;
   }
   main .welcome .container-fluid .card .card-body .card-text {
     margin: 24px auto 0;
-    font-size: 1rem;
-    line-height: 24px;
   }
   main .products .container-fluid .carousel .card span {
     display: block;
@@ -2267,7 +2626,11 @@ footer .container-fluid div {
     bottom: 0;
     transform: translateY(-170%);
     background: rgba(255, 255, 255, 0.7);
-    font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   main .products .container-fluid .carousel :hover span {
     height: 50px;
@@ -2280,9 +2643,6 @@ footer .container-fluid div {
   }
   main .products .productModal .modal-xl .content .modal-header {
     padding: 22px 24px 0 0;
-  }
-  main .products .productModal .modal-xl .content .modal-header button {
-    font-size: 0.75rem;
   }
   main .products .productModal .modal-xl .content .modal-body {
     padding: 0 34px 54px;
@@ -2331,9 +2691,6 @@ footer .container-fluid div {
     padding: 0;
     border: none;
   }
-  main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-ascend button span, main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group .buttons .input-group-descend button span {
-    font-size: 0.75rem;
-  }
   main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row2 .input-group:hover .buttons {
     opacity: 1;
   }
@@ -2348,7 +2705,11 @@ footer .container-fluid div {
     margin-bottom: 16px;
     background: #E51827;
     color: #FFF;
-    font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   main .products .productModal .modal-xl .content .modal-body .productItem .col2 .row3 .btn .text {
     opacity: 1;
@@ -2388,14 +2749,6 @@ footer .container-fluid div {
   main .features .container-fluid {
     height: auto;
   }
-  main .features .container-fluid .text h1 {
-    font-size: 1.5rem;
-    line-height: 32px;
-  }
-  main .features .container-fluid .text p {
-    font-size: 1rem;
-    line-height: 24px;
-  }
   main .features .container-fluid div .card .card-body {
     height: 120px;
   }
@@ -2407,16 +2760,6 @@ footer .container-fluid div {
   }
   main .about .container-fluid .card .card-body .card-title {
     margin-top: 0;
-    font-size: 1.5rem;
-    line-height: 32px;
-  }
-  main .about .container-fluid .card .card-body .card-text {
-    font-size: 1rem;
-    line-height: 24px;
-  }
-  main .about .container-fluid .card .card-body button a {
-    font-size: 1rem;
-    line-height: 24px;
   }
   main .blank .container-fluid {
     height: 73.3vh;
@@ -2517,18 +2860,6 @@ footer .container-fluid div {
   main .acknowledgePage .container-fluid {
     padding: 40px 12px;
   }
-  main .acknowledgePage .container-fluid .header h4 {
-    font-size: 1.5rem;
-    line-height: 32px;
-  }
-  main .acknowledgePage .container-fluid .header h6 {
-    font-size: 1rem;
-    line-height: 24px;
-  }
-  main .acknowledgePage .container-fluid .header p {
-    font-size: 0.938rem;
-    line-height: 23px;
-  }
   main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h5, main .acknowledgePage .container-fluid .card .card-body .body-row1 .first-col2 h6 {
     width: 100px;
   }
@@ -2551,7 +2882,11 @@ footer .container-fluid div {
     height: 45px;
     margin: 0;
     border-bottom: 1px solid #CCCCCC;
-    font: normal 400 1.375rem/30px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+    line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   main .categoryPage .container-fluid .body-content .sidebar .browse {
     /*ul {
@@ -2580,7 +2915,11 @@ footer .container-fluid div {
     outline: none;
     border: none;
     background: none;
-    font: normal 400 1rem/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   main .categoryPage .container-fluid .body-content .sidebar .browse .category-list .active {
     color: #E51827;
@@ -2600,7 +2939,11 @@ footer .container-fluid div {
     outline: none;
     border: none;
     text-align: left;
-    font: normal 400 1rem/24px "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .collapse {
     padding-bottom: 12px;
@@ -2617,7 +2960,11 @@ footer .container-fluid div {
     margin: 0 6px 0 2px;
   }
   main .categoryPage .container-fluid .body-content .sidebar .filter .product-filter .collapse .product-option label {
-    font: normal 400 0.938rem/23px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
   main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse {
     height: 60px;
@@ -2669,7 +3016,11 @@ footer .container-fluid div {
   }
   main .categoryPage .container-fluid .body-content .sidebar .filter .price-filter .collapse .price-content p {
     color: #000;
-    font: normal 400 16px/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
   main .categoryPage .container-fluid .body-content .product-content {
     width: 100%;
@@ -2682,7 +3033,11 @@ footer .container-fluid div {
     width: 80%;
     margin-bottom: 24px;
     display: block;
-    font: normal 400 16px/24px "Roboto", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(1.063rem, 0vw + 1.063rem, 1.063rem);
+    line-height: clamp(1.594rem, 0vw + 1.594rem, 1.594rem);
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
   }
   main .categoryPage .container-fluid .body-content .product-content .top-part .allProduct img {
     width: 100%;
@@ -2780,7 +3135,7 @@ footer .container-fluid div {
   }
   header .navbar .container-fluid .cart-btn span {
     width: auto;
-    padding: 3px 17.5px;
+    padding: 2px 18px;
     top: 23px;
   }
   main .welcome .container-fluid .card {
@@ -2792,23 +3147,9 @@ footer .container-fluid div {
   }
   main .welcome .container-fluid .card .card-body .card-title {
     margin: 0 auto 20px;
-    font-size: 1.688rem;
-    line-height: 35px;
-  }
-  main .welcome .container-fluid .card .card-body .card-text {
-    font-size: 1.188rem;
-    line-height: 27px;
   }
   main .features .container-fluid {
     padding: 0 24px;
-  }
-  main .features .container-fluid .text h1 {
-    font-size: 1.688rem;
-    line-height: 35px;
-  }
-  main .features .container-fluid .text p {
-    font-size: 1.188rem;
-    line-height: 27px;
   }
   main .features .container-fluid div .card {
     width: auto;
@@ -2823,14 +3164,6 @@ footer .container-fluid div {
     height: 200px;
     padding: 40px 0 0;
     bottom: -2%;
-  }
-  main .features .container-fluid div .card .card-body .card-title {
-    font-size: 1.188rem;
-    line-height: 27px;
-  }
-  main .features .container-fluid div .card .card-body .card-text {
-    font-size: 1.125rem;
-    line-height: 26px;
   }
   main .products .container-fluid i:first-child {
     left: 30px;
@@ -2849,14 +3182,6 @@ footer .container-fluid div {
   }
   main .about .container-fluid .card .card-body {
     width: 900px;
-  }
-  main .about .container-fluid .card .card-body .card-title {
-    font-size: 1.688rem;
-    line-height: 35px;
-  }
-  main .about .container-fluid .card .card-body .card-text, main .about .container-fluid .card .card-body button a {
-    font-size: 1.063rem;
-    line-height: 25px;
   }
   main .blank .container-fluid {
     height: 73.7vh;
@@ -2924,12 +3249,6 @@ footer .container-fluid div {
   }
   main .productPage .container-fluid .outer-row1 .second-opt {
     margin: 24px 0;
-    font-size: 17px;
-    line-height: 25px;
-  }
-  main .productPage .container-fluid .outer-row1 .second-opt .btns .btn {
-    font-size: 17px;
-    line-height: 25px;
   }
   main .productPage .container-fluid .outer-row2 {
     margin-top: 32px;
@@ -2970,22 +3289,6 @@ footer .container-fluid div {
   main .policyPage .container-fluid .policy, main .policyPage .container-fluid .return, main .policyPage .container-fluid .warranty, main .policyPage .container-fluid .privacy {
     padding: 48px 0;
   }
-  main .policyPage .container-fluid .policy h2, main .policyPage .container-fluid .return h2, main .policyPage .container-fluid .warranty h2, main .policyPage .container-fluid .privacy h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  main .policyPage .container-fluid .policy h6, main .policyPage .container-fluid .return h6, main .policyPage .container-fluid .warranty h6, main .policyPage .container-fluid .privacy h6 {
-    font-size: 17px;
-    line-height: 25px;
-  }
-  main .policyPage .container-fluid .policy p, main .policyPage .container-fluid .return p, main .policyPage .container-fluid .warranty p, main .policyPage .container-fluid .privacy p {
-    font-size: 17px;
-    line-height: 25px;
-  }
-  main .policyPage .container-fluid .policy button, main .policyPage .container-fluid .return button, main .policyPage .container-fluid .warranty button, main .policyPage .container-fluid .privacy button {
-    font-size: 17px;
-    line-height: 25px;
-  }
   main .blogPage .container-fluid {
     width: auto;
   }
@@ -3001,22 +3304,6 @@ footer .container-fluid div {
   }
   main .blogPage .container-fluid .all-post .card .card-body .post-text {
     height: 180px;
-  }
-  main .blogPage .container-fluid .all-post .card .card-body .post-text h5 {
-    font-size: clamp(1.188rem, 2.232vw + 0.116rem, 1.5rem);
-    line-height: clamp(1.603rem, 3.013vw + 0.157rem, 2.025rem);
-  }
-  main .blogPage .container-fluid .all-post .card .card-body .post-text p {
-    font-size: clamp(0.875rem, 0.446vw + 0.661rem, 0.938rem);
-    line-height: clamp(1.181rem, 1.942vw + 0.249rem, 1.453rem);
-  }
-  footer .container-fluid a {
-    font-size: 0.938rem;
-    line-height: 23px;
-  }
-  footer .container-fluid div {
-    font-size: 0.813rem;
-    line-height: 21px;
   }
 }
 @media only screen and (min-width: 992px) and (min-width: 1161px) {
@@ -3050,17 +3337,8 @@ footer .container-fluid div {
   main .welcome .container-fluid .card .card-body {
     padding: 95px 0;
   }
-  main .welcome .container-fluid .card .card-body .card-title {
-    font-size: 3.875rem;
-    line-height: 70px;
-  }
   main .features .container-fluid {
     padding: 0 80px;
-  }
-  main .features .container-fluid .text h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 48px;
   }
   main .products .container-fluid {
     margin: 60px 0 0;
@@ -3088,11 +3366,6 @@ footer .container-fluid div {
   main .about .container-fluid .card img {
     width: 490px;
   }
-  main .about .container-fluid .card .card-body .card-title {
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 48px;
-  }
   main .about .container-fluid .card .card-body .card-text {
     margin: 12px 16px;
   }
@@ -3102,14 +3375,6 @@ footer .container-fluid div {
   main .blank .container-fluid {
     height: 71.3vh;
     margin: 0 auto;
-  }
-  footer .container-fluid a {
-    font-size: 1rem;
-    line-height: 24px;
-  }
-  footer .container-fluid div {
-    font-size: 0.938rem;
-    line-height: 23px;
   }
 }
 @media screen and (min-width: 1400px) {

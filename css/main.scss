@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:ital@0;1&display=swap');
 @keyframes wave {
 	0%, 60%, 100% {
 		transform: initial;
@@ -123,7 +123,12 @@ header {
                         .nav-link {
                             padding: 12px 24px;
                             color: #000;
-                            font: normal 400 1.125rem/29px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.875rem, -0.893vw + 1.429rem, 1.25rem);
+                            line-height: clamp(1.094rem, -1.116vw + 1.786rem, 1.563rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
                         }
                         .active {
                             color: #E71D1D;
@@ -136,6 +141,7 @@ header {
                 border: none;
                 outline: none;
                 margin-left: auto;
+                pointer-events: none;
                 img {
                     width: 40px;
                     height: 40px;
@@ -147,10 +153,14 @@ header {
                     position: absolute;
                     text-align: center;
                     top: 17px;
-                    padding: 3px 15px;
+                    padding: 0px 15px;
                     background:none;
                     color: #E71D1D;
-                    font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Raleway', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 &:disabled {
                     pointer-events: all;
@@ -189,11 +199,19 @@ main {
                     text-align: center;
                     .card-title {
                         color: #E71D1D;
-                        font: normal 600 1.5rem/46px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1.938rem, 6.101vw + 0.717rem, 4.5rem);
+                        line-height: clamp(2.422rem, 7.626vw + 0.897rem, 5.625rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                     }
                     .card-text {
                         color: #000;
-                        font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1.063rem, 0.446vw + 0.973rem, 1.25rem);
+                        line-height: clamp(1.774rem, 0.746vw + 1.625rem, 2.088rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: 'Times New Roman', Times, serif;
                     }
                 }
             }            
@@ -205,11 +223,19 @@ main {
             .text {
                 h1 {
                     color: #E71D1D;
-                    font: normal 600 1.5rem/46px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1.5rem, 2.381vw + 1.024rem, 2.5rem);
+                    line-height: clamp(2.025rem, 3.214vw + 1.382rem, 3.375rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 p {
                     color: #000;
-                    font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+                    line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;
                 }
             }
             div {
@@ -240,12 +266,21 @@ main {
                         -moz-transform: translate(-50%, -5%);
                         .card-title {
                             color: #E71D1D;
-                            font: normal 600 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1.25rem, 0.298vw + 1.19rem, 1.375rem);
+                            line-height: clamp(1.763rem, 0.42vw + 1.679rem, 1.939rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            
                         }
                         .card-text {
                             margin-top: 8px;
                             color: #000;
-                            font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+                            line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+                            font-weight: 400;
+                            font-style: normal;
+	                        font-family: 'Times New Roman', Times, serif;
                         }
                     }
                 }            
@@ -318,11 +353,19 @@ main {
                         .card-title {
                             margin: 0 0 8px;
                             color: #000;
-                            font: normal 600 0.938rem/22px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+                            line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                         }
                         .card-text {
                             color: #000;
-                            font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.938rem, 0.149vw + 0.908rem, 1rem);
+                            line-height: clamp(1.406rem, 0.223vw + 1.362rem, 1.5rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: 'Times New Roman', Times, serif;
                         }
                     }
                 }
@@ -372,12 +415,20 @@ main {
                 .card-title {
                     margin-bottom: 12px;
                     color: #E71D1D;
-                    font: normal 600 1.5rem/46px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1.5rem, 2.381vw + 1.024rem, 2.5rem);
+                    line-height: clamp(2.025rem, 3.214vw + 1.382rem, 3.375rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 .card-text {
                     margin: 0;
                     color: #000;
-                    font: normal 400 0.938rempx/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+                    line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;
                 }
                 button {
                     margin: 16px 0 0;
@@ -389,7 +440,11 @@ main {
                     a {
                         text-decoration: none;
                         color: #E71D1D;
-                        font: normal 400 0.875rem/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(0.875rem, 0.149vw + 0.845rem, 0.938rem);
+                        line-height: clamp(1.313rem, 0.223vw + 1.268rem, 1.406rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                     }
                     &:hover {
                         background: #E71D1D;
@@ -415,7 +470,11 @@ main {
                 padding: 16px 0 6px;
                 border-bottom: 1px solid #CCCCCC;
                 h5 {
-                    font: normal 600 1.125rem/28px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                    line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
             }
             .body {
@@ -425,11 +484,19 @@ main {
                 text-align: center;
                 transform: translateY(-60%);
                 h4 {
-                    font: normal 600 1.125rem/28px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+                    line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 a {
                     color: #000;
-                    font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                    line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                     &:hover {
                         color: #949494;
                     }
@@ -450,7 +517,11 @@ main {
                     margin: 0;
                     padding: 16px 0;
                     border-bottom: 1px solid #CCCCCC;
-                    font: normal 600 1.125rem/28px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                    line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 .card {
                     width: auto;
@@ -481,11 +552,19 @@ main {
                         flex-direction: column;
                         h6 {
                             margin: 0;
-                            font: normal 600 0.875rem/20px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+                            line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                         }
                         p {
                             margin: 20px 0 24px;
-                            font: normal 400 0.875rem/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+                            line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+                            font-weight: 600;
+                            font-style: normal;
+	                        font-family: 'Times New Roman', Times, serif;
                         }
                         .input-group {
                             width: 80px;
@@ -509,7 +588,11 @@ main {
                                 border: none;
                                 padding: 0;
                                 text-align: center;
-                                font: normal 400 0.75rem/16px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(0.875rem, 0vw + 0.875rem, 0.875rem);
+                                line-height: clamp(1.313rem, 0vw + 1.313rem, 1.313rem);
+                                font-weight: 400;
+                                font-style: normal;
+	                            font-family: 'Times New Roman', Times, serif;
                             }
                         }
                         :hover {
@@ -522,7 +605,11 @@ main {
                         background: #FFF;
                         p {
                             margin: auto 0 4px;
-                            font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.938rem, 0.149vw + 0.908rem, 1rem);
+                            line-height: clamp(1.406rem, 0.223vw + 1.362rem, 1.5rem);
+                            font-weight: 600;
+                            font-style: normal;
+                            font-family: 'Times New Roman', Times, serif;
                         }
                         button {
                             margin-left: auto;
@@ -556,7 +643,11 @@ main {
                             button {
                                 display: inline;
                                 border: 1px solid #E51827;
-                                font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             }
                             ::placeholder {
                                 color: #000;
@@ -574,7 +665,11 @@ main {
                     margin: 0;
                     padding: 16px 0;
                     border-bottom: 1px solid #CCCCCC;
-                    font: normal 600 1.125rem/28px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                    line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 .card {
                     border: none;
@@ -588,17 +683,29 @@ main {
                             align-items: center;
                             h6 {
                                 margin: 12px 0;
-                                font: normal 600 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                                line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             }
                             p {
                                 margin: 12px 0;
-                                font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                                line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                                font-weight: 600;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                         }
                         .location {
                             a {
                                 color: #000;
-                                font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                                line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 &:hover {
                                     color: #646464;
                                 }
@@ -616,11 +723,19 @@ main {
                             align-items: center;
                             h6 {
                                 margin: 0;
-                                font: normal 600 1.063rem/26px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                                line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             }
                             p {
                                 margin: 0;
-                                font: normal 400 1.125rem/28px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0.298vw + 0.94rem, 1.125rem);
+                                line-height: clamp(1.5rem, 0.446vw + 1.411rem, 1.688rem);
+                                font-weight: 600;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                         }
                         .btn {
@@ -630,14 +745,22 @@ main {
                             padding: 8px 16px;
                             border-radius: 0;
                             background: #E51827;
-                            font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                            line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             &:hover {
                                 background: #EB4652;
                             }
                         }
                         p {
                             padding: 8px 0 16px;
-                            font: normal 400 0.938rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+                            line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: 'Times New Roman', Times, serif;
                             i {
                                 margin-right: 8px;
                             }
@@ -666,12 +789,20 @@ main {
                         text-align: center;
                         h2 {
                             margin: 0;
-                            font: normal 400 1.5rem/36px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1.5rem, 0.595vw + 1.381rem, 1.75rem);
+                            line-height: clamp(2.25rem, 0.893vw + 2.071rem, 2.625rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                         }
                         p {
                             color: #000;
                             margin: 32px 0;
-                            font: normal 400 0.875rem/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+                            line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+                            font-weight: 400;
+                            font-style: normal;
+	                        font-family: 'Times New Roman', Times, serif;
                         }
                         button {
                             width: 100%;
@@ -679,7 +810,11 @@ main {
                             border-radius: 0;
                             color: #FFF;
                             background: #000;
-                            font: normal 400 0.938rem/22px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                            line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             &:hover {
                                 background: #4C4C4C;
                             }
@@ -699,7 +834,11 @@ main {
             .outer-row1 {
                 .first-opt, .second-opt {
                     margin: 16px 0;
-                    font: normal 400 0.938rem/23px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(0.938rem, 0.298vw + 0.878rem, 1.063rem);
+                    line-height: clamp(1.406rem, 0.446vw + 1.317rem, 1.594rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                     a {
                         color: #6F6F70;
                         text-decoration: none;
@@ -736,16 +875,28 @@ main {
                         .inner-col2 {
                             .innermost-row1 {
                                 h4 {
-                                    font: normal 600 1.313rem/29px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                    line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 }
                                 p {
-                                    font: normal 400 1.125rem/26px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+                                    line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;
                                 }
                             }
                             .innermost-row2 {
                                 p {
                                     margin-bottom: 12px;
-                                    font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                    line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;
                                 }
                                 .input-group {
                                     width: 76px;
@@ -755,7 +906,11 @@ main {
                                     .form-control {
                                         height: 34px;
                                         padding: 8px 0 8px 10px;
-                                        font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        font-size: clamp(0.938rem, 0vw + 0.938rem, 0.938rem);
+                                        line-height: clamp(1.406rem, 0vw + 1.406rem, 1.406rem);
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: 'Times New Roman', Times, serif;                                        
                                     }
                                     .buttons {
                                         display: flex;
@@ -791,7 +946,11 @@ main {
                                     border-radius: 0;
                                     background: #E51827;
                                     color: #FFF;
-                                    font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1.125rem, 0.298vw + 1.065rem, 1.25rem);
+                                    line-height: clamp(1.688rem, 0.446vw + 1.598rem, 1.875rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                     .text {
                                         opacity: 1;
                                     }
@@ -851,7 +1010,11 @@ main {
                     p {
                         margin-bottom: 12px;
                         color: #000;
-                        font: normal 400 1.063rem/25px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1.063rem, 0.595vw + 0.943rem, 1.313rem);
+                        line-height: clamp(1.594rem, 0.893vw + 1.415rem, 1.969rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: 'Times New Roman', Times, serif;
                     }
                 }
                 .active {
@@ -869,13 +1032,25 @@ main {
                 color: #000;
                 text-align: center;
                 h4 {
-                    font: normal 600 1.188rem/25px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+                    line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 h6 {
-                    font: normal 400 0.875rem/21px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                    line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 }
                 p {
-                    font: normal 400 0.813rem/21px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                    line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;
                 }
             }
             .card {
@@ -902,11 +1077,19 @@ main {
                             .product-list {
                                 h5 {
                                     margin-bottom: 12px;
-                                    font: normal 600 0.875rem/22px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+                                    line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 }
                                 h6, p {
                                     margin: 0;
-                                    font: normal 400 0.813rem/21px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                    line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;
                                 }
                             }
                         }
@@ -917,11 +1100,19 @@ main {
                             border-bottom: 1px solid #FCFAF1;
                             h5 {
                                 margin: 0;
-                                font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                             h6 {
                                 margin: 0 0 0 auto;
-                                font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                         }
                     }
@@ -931,11 +1122,19 @@ main {
                             border-bottom: 1px solid #FCFAF1;
                             h6 {
                                 margin: 0;
-                                font: normal 600 0.813rem/21px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             }
                             p {
                                 margin: 0;
-                                font: normal 400 0.813rem/21px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                         }
                         .second-col2 {
@@ -946,10 +1145,18 @@ main {
                                     align-items: center;
                                     color: #000;
                                     h6 {
-                                        font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                        line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: 'Times New Roman', Times, serif;
                                     }
                                     p {
-                                        font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                        line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: 'Times New Roman', Times, serif;
                                     }
                                 }
                             }
@@ -975,13 +1182,21 @@ main {
                             text-align: left;
                             h5 {
                                 margin-bottom: 16px;
-                                font: normal 600 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             }
                         }
                         .body {
                             p {
                                 margin-bottom: 6px;
-                                font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+                                line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                         }
                     }
@@ -1000,7 +1215,11 @@ main {
                 align-items: center;
                 justify-content: center;
                 color: #000;
-                font: normal 400 0.938rem/23px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: clamp(0.938rem, 0.595vw + 0.818rem, 1.188rem);
+                line-height: clamp(1.406rem, 0.893vw + 1.228rem, 1.781rem);
+                font-weight: 400;
+                font-style: normal;
+                font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
         }
     }
@@ -1013,7 +1232,10 @@ main {
                 width: auto;
                 display: flex;
                 margin: 6px 0 12px;
-                font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                font-weight: 400;
+                font-family: 'Times New Roman', Times, serif;
                 a {
                     color: #000;
                     text-decoration: none;
@@ -1045,7 +1267,11 @@ main {
                             .paragraph {
                                 h2 {
                                     margin: 12px 0 16px;
-                                    font: normal 400 1.625rem/34px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1.625rem, 0.595vw + 1.506rem, 1.875rem);
+                                    line-height: clamp(2.438rem, 0.893vw + 2.259rem, 2.813rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 }
                                 p {
                                     display: none;
@@ -1067,7 +1293,11 @@ main {
                             align-items: center;
                             column-gap: 8px;
                             margin-bottom: 8px;
-                            font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                            line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: 'Times New Roman', Times, serif;
                             button {
                                 margin: 8px 0 0;
                                 padding: 2px 10px;
@@ -1094,13 +1324,21 @@ main {
                             justify-content: space-between;
                             p {
                                 margin: 0;
-                                font: normal 400 0.875rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
                             }
                             .hidden-sidebar {
                                 button {
                                     padding: 0;
                                     text-decoration: underline;
-                                    font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                    line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 }
                                 .offcanvas {
                                     width: 320px;
@@ -1108,11 +1346,19 @@ main {
                                         border-bottom: 1px solid #CCCCCC;
                                         h3 {
                                             margin: 0;
-                                            font: normal 400 1.5rem/32px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                            font-size: clamp(1.625rem, 0.595vw + 1.506rem, 1.875rem);
+                                            line-height: clamp(2.438rem, 0.893vw + 2.259rem, 2.813rem);
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                         }
                                         p {
                                             margin: 6px 0 0 -48px;
-                                            font: normal 400 14px/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                            font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                            line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            font-family: 'Times New Roman', Times, serif;
                                         }
                                     }
                                     .offcanvas-body {
@@ -1125,7 +1371,11 @@ main {
                                                 outline: none;
                                                 border: none;
                                                 text-decoration: none;
-                                                font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                                font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                                line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                                font-weight: 400;
+                                                font-style: normal;
+                                                font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                             }
                                             .collapse {
                                                 padding-top: 4px;
@@ -1137,7 +1387,11 @@ main {
                                                     margin: 10px 8px 6px 0;
                                                 }
                                                 label {
-                                                    font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                                    font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                                    line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                                    font-weight: 400;
+                                                    font-style: normal;
+                                                    font-family: 'Times New Roman', Times, serif;
                                                 }
                                                 .product-option {
                                                     margin: 4px 0;
@@ -1145,7 +1399,11 @@ main {
                                                         margin-right: 3px;
                                                     }
                                                     label {
-                                                        font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                                        font-size: clamp(0.875rem, 0.595vw + 0.756rem, 1.125rem);
+                                                        line-height: clamp(1.313rem, 0.893vw + 1.134rem, 1.688rem);
+                                                        font-weight: 400;
+                                                        font-style: normal;
+                                                        font-family: 'Times New Roman', Times, serif;
                                                     }
                                                 }
                                             }
@@ -1200,7 +1458,11 @@ main {
                                                     margin: 28px 0 0;
                                                     p {
                                                         color: #000;
-                                                        font: normal 400 16px/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                                        font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                                        line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                                        font-weight: 400;
+                                                        font-style: normal;
+                                                        font-family: 'Times New Roman', Times, serif;                                                
                                                     }
                                                 }
                                             }
@@ -1231,11 +1493,19 @@ main {
                                 .card-body {
                                     padding: 12px 0 0;
                                     h6 {
-                                        font: normal 600 0.938rem/23px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                        line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                     }
                                     p {
                                         margin: 0;
-                                        font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                        line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: 'Times New Roman', Times, serif;
                                     }
                                 }
                             }                            
@@ -1264,16 +1534,28 @@ main {
                 h2 {
                     margin-bottom: 8px;
                     color: #E71D1D;
-                    font: normal 600 1.5rem/32px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1.5rem, 2.381vw + 1.024rem, 2.5rem);
+                    line-height: clamp(2.025rem, 3.214vw + 1.382rem, 3.375rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                    
                 }
                 h6 {
                     margin-bottom: 16px;
                     color: #000;
-                    font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(0.938rem, 0.446vw + 0.848rem, 1.125rem);
+                    line-height: clamp(1.641rem, 0.781vw + 1.484rem, 1.969rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;                    
                 }
                 p {
                     margin-bottom: 24px;
-                    font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(0.875rem, 0.149vw + 0.845rem, 0.938rem);
+                    line-height: clamp(1.645rem, 0.28vw + 1.589rem, 1.763rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;
                 }
                 button {
                     padding: 8px 16px;
@@ -1281,7 +1563,11 @@ main {
                     border: 3px solid #E71D1D;
                     color: #E71D1D;
                     transition: .35s ease-in-out;
-                    font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                    
+                    font-size: clamp(0.875rem, 0.149vw + 0.845rem, 0.938rem);
+                    line-height: clamp(1.645rem, 0.28vw + 1.589rem, 1.763rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                                      
                     &:hover {
                         color: #FFF;
                         background: #E71D1D;
@@ -1309,7 +1595,11 @@ main {
                     p {
                         margin: 0;
                         color: #FFF;
-                        font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                        line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                        
                     }
                     button {
                         margin-left: auto;
@@ -1398,10 +1688,18 @@ main {
                         .post-text {
                             cursor: pointer;
                             h5 {
-                                font: normal 400 1.188rem/27px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+                                line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                             }
                             p {
-                                font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(0.938rem, 0vw + 0.938rem, 0.938rem);
+                                line-height: clamp(1.406rem, 0vw + 1.406rem, 1.406rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;                                
                                 &:hover {
                                     color: #E8343E;
                                 }
@@ -1423,7 +1721,11 @@ main {
                                 }
                                 span {
                                     margin: 0 8px;
-                                    font: normal 400 0.75rem/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+                                    line-height: clamp(1.125rem, 0.446vw + 1.036rem, 1.313rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;
                                 }
                             }
                             .viewers {
@@ -1507,7 +1809,11 @@ main {
                                 p {
                                     cursor: default;
                                     margin: 4px 0 0;
-                                    font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.875rem, 0.298vw + 0.815rem, 1rem);
+                                    line-height: clamp(1.313rem, 0.446vw + 1.223rem, 1.5rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;                                    
                                 }
                                 .date {
                                     cursor: auto;
@@ -1552,13 +1858,21 @@ main {
                             padding: 0 16px;
                             h5 {
                                 margin: 32px 0;
-                                font: normal 400 1.5rem/32px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+                                line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                         
                             }
                             .paragraph {
                                 text-align: center;
                                 p {
                                     margin-bottom: 24px;
-                                    font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                    line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;                                    
                                 }
                             }
                         }
@@ -1604,7 +1918,11 @@ main {
                                 }
                                 span {
                                     margin: 0 8px;
-                                    font: normal 400 0.75rem/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+                                    line-height: clamp(1.125rem, 0.446vw + 1.036rem, 1.313rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;                                    
                                 }
                             }
                             .viewers {
@@ -1656,10 +1974,18 @@ main {
                         margin: 0 16px 8px;
                         h6 {
                             margin: 0;
-                            font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                            line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                            
                         }
                         button {
-                            font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                            line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                            
                             &:hover {
                                 color: #E8343E;
                             }
@@ -1723,7 +2049,11 @@ main {
                                 border-bottom: 1px solid #CCCCCC;
                                 p {
                                     margin: 0;
-                                    font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1rem, 0.595vw + 0.881rem, 1.25rem);
+                                    line-height: clamp(1.5rem, 0.893vw + 1.321rem, 1.875rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
                                 }
                                 img {
                                     width: 45px;
@@ -1757,7 +2087,11 @@ footer {
             width: 100%;
             text-decoration: none;
             color: #000;
-            font: normal 400 0.875rem/22px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: clamp(0.875rem, -0.149vw + 0.967rem, 0.938rem);
+            line-height: clamp(1.645rem, -0.28vw + 1.818rem, 1.763rem);
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         .social-bar {
             width: auto;
@@ -1781,7 +2115,11 @@ footer {
             }
         }
         div {
-            font: normal 400 0.75rem/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+            line-height: clamp(1.343rem, 0.533vw + 1.236rem, 1.566rem);
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         }        
     }
 }
@@ -1800,12 +2138,6 @@ footer {
         .productPage {
             .container-fluid {
                 padding: 0 32px;
-                .outer-row1 {
-                    .first-opt {
-                        font-size: 1rem;
-                        line-height: 24px;
-                    }
-                }
                 .outer-row2 {
                     .card {
                         .card-body {
@@ -1885,12 +2217,6 @@ footer {
         .productPage {
             .container-fluid {
                 padding: 0 40px;
-                .outer-row1 {
-                    .first-opt {
-                        font-size: 1rem;
-                        line-height: 24px;
-                    }
-                }
                 .outer-row2 {
                     .card {
                         .card-body {
@@ -2368,6 +2694,9 @@ footer {
                         }
                     }
                 }
+                .cart-btn {
+                    pointer-events: all;
+                }
                 form {
                     width: 25%;
                     height: 45px;
@@ -2399,7 +2728,11 @@ footer {
                 h3 {
                     color: #FFF;
                     margin: 0 auto;
-                    font: normal 400 1.5rem/32px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: clamp(1.5rem, 0.595vw + 1.381rem, 1.75rem);
+                    line-height: clamp(2.25rem, 0.893vw + 2.071rem, 2.625rem);
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                    
                 }
             }
             .offcanvas-body {
@@ -2426,11 +2759,19 @@ footer {
                             padding-top: 8px;
                             h6 {
                                 margin: 0;
-                                font: normal 600 0.938rem/23px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                                
                             }
                             p {
                                 margin: 8px 0 12px;
-                                font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                font-weight: 600;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;                                
                             }
                             .input-group {
                                 width: 80px;
@@ -2453,7 +2794,11 @@ footer {
                                     border: none;
                                     padding: 0;
                                     text-align: center;
-                                    font: normal 400 0.75/20px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
+                                    line-height: clamp(1.125rem, 0.446vw + 1.036rem, 1.313rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: 'Times New Roman', Times, serif;                                    
                                 }
                             }
                             :hover {
@@ -2485,11 +2830,19 @@ footer {
                     margin-top: auto;
                     h6 {
                         margin: 0;
-                        font: normal 400 1.5rem/32px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+                        line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                        
                     }
                     p {
                         margin: 0;
-                        font: normal 400 1.375rem/30px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1.125rem, 0.595vw + 1.006rem, 1.375rem);
+                        line-height: clamp(1.688rem, 0.893vw + 1.509rem, 2.063rem);
+                        font-weight: 600;
+                        font-style: normal;
+                        font-family: 'Times New Roman', Times, serif;                        
                     }
                 }
             }
@@ -2508,7 +2861,11 @@ footer {
                         padding: 14px 104px;
                         color: #FFF;
                         text-decoration: none;
-                        font: normal 400 1.125rem/26px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: clamp(1.063rem, 0.595vw + 0.943rem, 1.313rem);
+                        line-height: clamp(1.594rem, 0.893vw + 1.415rem, 1.969rem);
+                        font-weight: 400;
+                        font-style: normal;
+                        font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                        
                     }
                 }
             }                    
@@ -2553,13 +2910,9 @@ footer {
                         background: rgba(231, 223, 211, 0.5);
                         .card-title {
                             margin: 0 auto;
-                            font-size: 1.5rem;
-                            line-height: 32px;
                         }
                         .card-text {
                             margin: 24px auto 0;
-                            font-size: 1rem;
-                            line-height: 24px;
                         }
                     }
                 }                
@@ -2584,7 +2937,11 @@ footer {
                             bottom: 0;
                             transform: translateY(-170%);
                             background: rgba(255, 255, 255, 0.7);
-                            font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                            line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                            font-weight: 400;
+                            font-style: normal;
+                            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                            
                         }
                     }
                     :hover {
@@ -2603,9 +2960,6 @@ footer {
                     .content {
                         .modal-header {
                             padding: 22px 24px 0 0;
-                            button {
-                                font-size: 0.75rem;
-                            }
                         }
                         .modal-body {
                             padding: 0 34px 54px;
@@ -2652,9 +3006,6 @@ footer {
                                                         margin: -6px 8px 4px;
                                                         padding: 0;
                                                         border: none;
-                                                        span {
-                                                            font-size: 0.75rem;
-                                                        }
                                                     }
                                                 }
                                             }
@@ -2675,7 +3026,11 @@ footer {
                                             margin-bottom: 16px;
                                             background: #E51827;
                                             color: #FFF;
-                                            font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                            font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                            line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                                            
                                             .text {
                                                 opacity: 1;
                                             }
@@ -2727,16 +3082,6 @@ footer {
         .features {
             .container-fluid {
                 height: auto;
-                .text {
-                    h1 {
-                        font-size: 1.5rem;
-                        line-height: 32px;
-                    }
-                    p {
-                        font-size: 1rem;
-                        line-height: 24px;
-                    }
-                }
                 div {
                     .card {
                         .card-body {
@@ -2754,18 +3099,6 @@ footer {
                         padding: 24px 0;
                         .card-title {
                             margin-top: 0;
-                            font-size: 1.5rem;
-                            line-height: 32px;
-                        }
-                        .card-text {
-                            font-size: 1rem;
-                            line-height: 24px;
-                        }
-                        button {
-                            a {
-                                font-size: 1rem;
-                                line-height: 24px;
-                            }
                         }
                     }
                 }                
@@ -2893,20 +3226,6 @@ footer {
         .acknowledgePage {
             .container-fluid {
                 padding: 40px 12px;
-                .header {
-                    h4 {
-                        font-size: 1.5rem;
-                        line-height: 32px;
-                    }
-                    h6 {
-                        font-size: 1rem;
-                        line-height: 24px;
-                    }
-                    p {
-                        font-size: 0.938rem;
-                        line-height: 23px;
-                    }
-                }
                 .card {
                     .card-body {
                         .body-row1 {
@@ -2939,7 +3258,11 @@ footer {
                                 height: 45px;
                                 margin: 0;
                                 border-bottom: 1px solid #CCCCCC;
-                                font: normal 400 1.375rem/30px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                font-size: clamp(1.25rem, 0.595vw + 1.131rem, 1.5rem);
+                                line-height: clamp(1.875rem, 0.893vw + 1.696rem, 2.25rem);
+                                font-weight: 400;
+                                font-style: normal;
+                                font-family: "Poppins", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                                
                             }
                         }
                         .browse {
@@ -2950,7 +3273,11 @@ footer {
                                     outline: none;
                                     border: none;
                                     background: none;
-                                    font: normal 400 1rem/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                                    
                                 }
                                 .active {
                                     color: #E51827;
@@ -2987,7 +3314,11 @@ footer {
                                     outline: none;
                                     border: none;
                                     text-align: left;
-                                    font: normal 400 1rem/24px 'Montserrat', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                    font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                    line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    font-family: "Raleway", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                                    
                                 }
                             }
                             .product-filter {
@@ -3004,7 +3335,11 @@ footer {
                                             margin: 0 6px 0 2px;
                                         }
                                         label {
-                                            font: normal 400 0.938rem/23px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                            font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                            line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            font-family: 'Times New Roman', Times, serif;                                            
                                         }
                                     }
                                 }
@@ -3058,7 +3393,11 @@ footer {
                                         margin: 28px 0 0;
                                         p {
                                             color: #000;
-                                            font: normal 400 16px/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                            font-size: clamp(1rem, 0vw + 1rem, 1rem);
+                                            line-height: clamp(1.5rem, 0vw + 1.5rem, 1.5rem);
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            font-family: 'Times New Roman', Times, serif;  
                                         }
                                     }
                                 }
@@ -3078,7 +3417,11 @@ footer {
                                         width: 80%;
                                         margin-bottom: 24px;
                                         display: block;
-                                        font: normal 400 16px/24px 'Roboto', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        font-size: clamp(1.063rem, 0vw + 1.063rem, 1.063rem);
+                                        line-height: clamp(1.594rem, 0vw + 1.594rem, 1.594rem);
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        font-family: 'Times New Roman', Times, serif;  
                                     }
                                 }                                
                             }
@@ -3230,7 +3573,7 @@ footer {
                     }
                     span {
                         width: auto;
-                        padding: 3px 17.5px;
+                        padding: 2px 18px;
                         top: 23px;
                     }
                 }
@@ -3248,12 +3591,6 @@ footer {
                         padding: 72.4px 0;
                         .card-title {
                             margin: 0 auto 20px;
-                            font-size: 1.688rem;
-                            line-height: 35px;
-                        }
-                        .card-text {
-                            font-size: 1.188rem;
-                            line-height: 27px;
                         }
                     }
                 }                
@@ -3262,16 +3599,6 @@ footer {
         .features {
             .container-fluid {
                 padding: 0 24px;
-                .text {
-                    h1 {
-                        font-size: 1.688rem;
-                        line-height: 35px;
-                    }
-                    p {
-                        font-size: 1.188rem;
-                        line-height: 27px;
-                    }
-                }
                 div {
                     .card {
                         width: auto;
@@ -3285,14 +3612,6 @@ footer {
                             height: 200px;
                             padding: 40px 0 0;
                             bottom: -2%;
-                            .card-title {
-                                font-size: 1.188rem;
-                                line-height: 27px;
-                            }
-                            .card-text {
-                                font-size: 1.125rem;
-                                line-height: 26px;
-                            }
                         }
                     }
                 }                
@@ -3320,14 +3639,6 @@ footer {
                     justify-content: center;
                     .card-body {
                         width: 900px;
-                        .card-title {
-                            font-size: 1.688rem;
-                            line-height: 35px;
-                        }
-                        .card-text, button a {
-                            font-size: 1.063rem;
-                            line-height: 25px;
-                        }
                     }
                 }                
             }
@@ -3373,14 +3684,6 @@ footer {
                 .outer-row1 {
                     .second-opt {
                         margin: 24px 0;
-                        font-size: 17px;
-                        line-height: 25px;
-                        .btns {
-                            .btn {
-                                font-size: 17px;
-                                line-height: 25px;
-                            }
-                        }
                     }
                 }
                 /*.carousel {
@@ -3483,22 +3786,6 @@ footer {
                 padding: 24px 28px;
                 .policy, .return, .warranty, .privacy {
                     padding: 48px 0;
-                    h2 {
-                        font-size: 32px;
-                        line-height: 40px;
-                    }
-                    h6 {
-                        font-size: 17px;
-                        line-height: 25px;
-                    }
-                    p {
-                        font-size: 17px;
-                        line-height: 25px;
-                    }
-                    button {
-                        font-size: 17px;
-                        line-height: 25px;
-                    }
                 }
             }
         }
@@ -3517,31 +3804,11 @@ footer {
                             padding: 16px 32px;
                             .post-text {
                                 height: 180px;
-                                h5 {
-                                    font-size: clamp(1.188rem, 2.232vw + 0.116rem, 1.5rem);
-                                    line-height: clamp(1.603rem, 3.013vw + 0.157rem, 2.025rem);
-                                }
-                                p {
-                                    font-size: clamp(0.875rem, 0.446vw + 0.661rem, 0.938rem);
-                                    line-height: clamp(1.181rem, 1.942vw + 0.249rem, 1.453rem);
-                                }
                             }
                         }
                     }                    
                 }
             }
-        }
-    }
-    footer {
-        .container-fluid {
-            a {
-                font-size: 0.938rem;
-                line-height: 23px;
-            }
-            div {
-                font-size: 0.813rem;
-                line-height: 21px;
-            }            
         }
     }
     //Home Page Page
@@ -3596,24 +3863,13 @@ footer {
                     top: 50px;
                     .card-body {
                         padding: 95px 0;
-                        .card-title {
-                            font-size: 3.875rem;
-                            line-height: 70px;
-                        }
                     }
                 }                
             }
         }
         .features {
             .container-fluid {
-                padding: 0 80px;
-                .text {
-                    h1 {
-                        font-size: 2.5rem;
-                        font-weight: 400;
-                        line-height: 48px;
-                    }
-                }                
+                padding: 0 80px;               
             }
         }
         .products {
@@ -3646,11 +3902,6 @@ footer {
                         width: 490px;
                     }
                     .card-body {
-                        .card-title {
-                            font-size: 2.5rem;
-                            font-weight: 400;
-                            line-height: 48px;
-                        }
                         .card-text {
                             margin: 12px 16px;
                         }
@@ -3667,18 +3918,6 @@ footer {
                 height: 71.3vh;
                 margin: 0 auto;
             }
-        }
-    }
-    footer {
-        .container-fluid {
-            a {
-                font-size: 1rem;
-                line-height: 24px;
-            }
-            div {
-                font-size: 0.938rem;
-                line-height: 23px;
-            }            
         }
     }
 }

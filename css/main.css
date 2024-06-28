@@ -1984,7 +1984,7 @@ footer .container-fluid .social-bar ul li a i {
   font-size: 1.5rem;
   padding: 4px 8px;
 }
-footer .container-fluid div {
+footer .container-fluid p {
   font-size: clamp(0.75rem, 0.298vw + 0.69rem, 0.875rem);
   line-height: clamp(1.343rem, 0.533vw + 1.236rem, 1.566rem);
   font-weight: 400;
